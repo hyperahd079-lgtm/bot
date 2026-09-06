@@ -2,5147 +2,971 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>عيد ميلاد فطوم</title>
 
-<meta name="viewport"
-content="width=device-width,
-initial-scale=1,
-maximum-scale=1,
-user-scalable=no">
-
-<title>عيد ميلاد فاطمه</title>
+<!-- Open Graph / WhatsApp Preview -->
+<meta property="og:title" content="عيد ميلاد سعيد حلوتي 🤍">
+<meta property="og:description" content="هناك مفاجأة صغيرة صنعت خصيصاً لكِ...">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#050308">
 
 <style>
-
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
 
-
-/* =====================================================
-   RESET
-===================================================== */
-
+/* RESET */
 *{
     box-sizing:border-box;
     -webkit-tap-highlight-color:transparent;
 }
-
-html,
-body{
+html, body{
     width:100%;
     height:100%;
     margin:0;
     overflow:hidden;
 }
-
 body{
     background:#050308;
     color:white;
     font-family:"Cairo",sans-serif;
 }
-
 button{
     font-family:"Cairo",sans-serif;
 }
 
-
-/* =====================================================
-   EXPERIENCE
-===================================================== */
-
+/* EXPERIENCE */
 .experience{
-
     position:relative;
-
     width:100%;
     height:100dvh;
-
     overflow:hidden;
-
     background:
-
-    radial-gradient(
-        circle at 50% 40%,
-        rgba(255,184,120,.16),
-        transparent 24%
-    ),
-
-    radial-gradient(
-        circle at 0% 100%,
-        rgba(150,65,255,.18),
-        transparent 35%
-    ),
-
-    radial-gradient(
-        circle at 100% 0%,
-        rgba(255,75,145,.14),
-        transparent 32%
-    ),
-
-    linear-gradient(
-        125deg,
-        #050308,
-        #120817,
-        #08050d,
-        #160912,
-        #040207
-    );
-
-    background-size:
-        auto,
-        auto,
-        auto,
-        400% 400%;
-
-    animation:
-        backgroundMove 18s ease infinite;
-
+    radial-gradient(circle at 50% 40%, rgba(255,184,120,.16), transparent 24%),
+    radial-gradient(circle at 0% 100%, rgba(150,65,255,.18), transparent 35%),
+    radial-gradient(circle at 100% 0%, rgba(255,75,145,.14), transparent 32%),
+    linear-gradient(125deg, #050308, #120817, #08050d, #160912, #040207);
+    background-size: auto, auto, auto, 400% 400%;
+    animation: backgroundMove 18s ease infinite;
 }
 
-
-/* =====================================================
-   GLOBAL CENTER FIX
-===================================================== */
-
-.welcome,
-.presentation,
-.wish-screen,
-.cake-screen,
-.message-screen,
-.celebration,
-.final-screen{
-
+/* GLOBAL CENTER FIX */
+.welcome, .presentation, .wish-screen, .cake-screen, .message-screen, .celebration, .final-screen{
     width:100%;
     max-width:100%;
-
     left:0;
     right:0;
-
     overflow:hidden;
-
 }
 
-
-/* =====================================================
-   VIGNETTE
-===================================================== */
-
+/* VIGNETTE */
 .experience::after{
-
     content:"";
-
     position:absolute;
-
     inset:0;
-
     pointer-events:none;
-
-    background:
-
-    radial-gradient(
-        ellipse at center,
-        transparent 25%,
-        rgba(0,0,0,.22) 65%,
-        rgba(0,0,0,.82) 100%
-    );
-
+    background: radial-gradient(ellipse at center, transparent 25%, rgba(0,0,0,.22) 65%, rgba(0,0,0,.82) 100%);
     z-index:60;
-
 }
-
-
 @keyframes backgroundMove{
-
-    0%,100%{
-        background-position:
-        center,
-        center,
-        center,
-        0% 50%;
-    }
-
-    50%{
-        background-position:
-        center,
-        center,
-        center,
-        100% 50%;
-    }
-
+    0%,100%{ background-position: center, center, center, 0% 50%; }
+    50%{ background-position: center, center, center, 100% 50%; }
 }
 
-
-/* =====================================================
-   AURORA
-===================================================== */
-
+/* AURORA */
 .aurora{
-
     position:absolute;
-
     border-radius:50%;
-
     pointer-events:none;
-
     filter:blur(90px);
-
     mix-blend-mode:screen;
-
     opacity:.5;
-
 }
-
-
 .aurora.one{
-
-    width:460px;
-    height:460px;
-
-    top:-260px;
-    right:-170px;
-
-    background:
-
-    radial-gradient(
-        circle,
-        rgba(255,145,90,.55),
-        transparent 68%
-    );
-
-    animation:
-        auroraOne 12s ease-in-out infinite alternate;
-
+    width:460px; height:460px; top:-260px; right:-170px;
+    background: radial-gradient(circle, rgba(255,145,90,.55), transparent 68%);
+    animation: auroraOne 12s ease-in-out infinite alternate;
 }
-
-
 .aurora.two{
-
-    width:420px;
-    height:420px;
-
-    bottom:-250px;
-    left:-170px;
-
-    background:
-
-    radial-gradient(
-        circle,
-        rgba(163,75,255,.45),
-        transparent 68%
-    );
-
-    animation:
-        auroraTwo 15s ease-in-out infinite alternate;
-
+    width:420px; height:420px; bottom:-250px; left:-170px;
+    background: radial-gradient(circle, rgba(163,75,255,.45), transparent 68%);
+    animation: auroraTwo 15s ease-in-out infinite alternate;
 }
-
-
 .aurora.three{
-
-    width:300px;
-    height:300px;
-
-    left:50%;
-    top:45%;
-
-    transform:
-        translate(-50%,-50%);
-
-    background:
-
-    radial-gradient(
-        circle,
-        rgba(255,190,130,.23),
-        transparent 68%
-    );
-
+    width:300px; height:300px; left:50%; top:45%;
+    transform: translate(-50%,-50%);
+    background: radial-gradient(circle, rgba(255,190,130,.23), transparent 68%);
     filter:blur(110px);
-
-    animation:
-        centerGlow 5s ease-in-out infinite;
-
+    animation: centerGlow 5s ease-in-out infinite;
 }
-
-
 @keyframes auroraOne{
-
-    0%{
-        transform:
-            translate(0,0)
-            scale(1);
-    }
-
-    50%{
-        transform:
-            translate(-170px,210px)
-            scale(1.3);
-    }
-
-    100%{
-        transform:
-            translate(-70px,350px)
-            scale(1.1);
-    }
-
+    0%{ transform: translate(0,0) scale(1); }
+    50%{ transform: translate(-170px,210px) scale(1.3); }
+    100%{ transform: translate(-70px,350px) scale(1.1); }
 }
-
-
 @keyframes auroraTwo{
-
-    0%{
-        transform:
-            translate(0,0)
-            scale(1);
-    }
-
-    50%{
-        transform:
-            translate(170px,-180px)
-            scale(1.3);
-    }
-
-    100%{
-        transform:
-            translate(280px,-70px)
-            scale(1.1);
-    }
-
+    0%{ transform: translate(0,0) scale(1); }
+    50%{ transform: translate(170px,-180px) scale(1.3); }
+    100%{ transform: translate(280px,-70px) scale(1.1); }
 }
-
-
 @keyframes centerGlow{
-
-    0%,100%{
-
-        opacity:.3;
-
-        transform:
-            translate(-50%,-50%)
-            scale(.8);
-
-    }
-
-    50%{
-
-        opacity:.85;
-
-        transform:
-            translate(-50%,-50%)
-            scale(1.45);
-
-    }
-
+    0%,100%{ opacity:.3; transform: translate(-50%,-50%) scale(.8); }
+    50%{ opacity:.85; transform: translate(-50%,-50%) scale(1.45); }
 }
 
-
-/* =====================================================
-   PARTICLES
-===================================================== */
-
-.particles{
-
-    position:absolute;
-
-    inset:0;
-
-    pointer-events:none;
-
-    z-index:2;
-
-}
-
-
+/* PARTICLES */
+.particles{ position:absolute; inset:0; pointer-events:none; z-index:2; }
 .particle{
-
-    position:absolute;
-
-    width:3px;
-    height:3px;
-
-    border-radius:50%;
-
-    background:white;
-
-    box-shadow:
-        0 0 8px white,
-        0 0 22px rgba(255,175,110,.7);
-
-    opacity:0;
-
-    animation:
-        particleFloat linear infinite;
-
+    position:absolute; width:3px; height:3px; border-radius:50%; background:white;
+    box-shadow: 0 0 8px white, 0 0 22px rgba(255,175,110,.7);
+    opacity:0; animation: particleFloat linear infinite;
 }
-
-
 @keyframes particleFloat{
-
-    0%{
-
-        transform:
-            translate3d(
-                0,
-                110vh,
-                0
-            )
-            scale(.2);
-
-        opacity:0;
-
-    }
-
-    15%{
-        opacity:.9;
-    }
-
-    70%{
-        opacity:.35;
-    }
-
-    100%{
-
-        transform:
-            translate3d(
-                var(--moveX),
-                -15vh,
-                0
-            )
-            scale(1);
-
-        opacity:0;
-
-    }
-
+    0%{ transform: translate3d(0, 110vh, 0) scale(.2); opacity:0; }
+    15%{ opacity:.9; }
+    70%{ opacity:.35; }
+    100%{ transform: translate3d(var(--moveX), -15vh, 0) scale(1); opacity:0; }
 }
 
-
-/* =====================================================
-   LIGHT RING
-===================================================== */
-
+/* LIGHT RING */
 .light-ring{
-
-    position:absolute;
-
-    left:50%;
-    top:50%;
-
-    width:570px;
-    height:570px;
-
-    transform:
-        translate(-50%,-50%);
-
-    border-radius:50%;
-
-    border:
-        1px solid
-        rgba(255,210,170,.055);
-
-    box-shadow:
-
-        0 0 100px
-        rgba(255,150,100,.05),
-
-        inset 0 0 90px
-        rgba(255,150,100,.035);
-
-    animation:
-        ringRotate 28s linear infinite;
-
-    pointer-events:none;
-
-    z-index:1;
-
+    position:absolute; left:50%; top:50%; width:570px; height:570px;
+    transform: translate(-50%,-50%); border-radius:50%;
+    border: 1px solid rgba(255,210,170,.055);
+    box-shadow: 0 0 100px rgba(255,150,100,.05), inset 0 0 90px rgba(255,150,100,.035);
+    animation: ringRotate 28s linear infinite; pointer-events:none; z-index:1;
 }
+.light-ring::before{ content:""; position:absolute; inset:70px; border-radius:50%; border: 1px solid rgba(255,255,255,.035); }
+.light-ring::after{ content:""; position:absolute; inset:140px; border-radius:50%; border: 1px solid rgba(255,180,130,.045); }
+@keyframes ringRotate{ to{ transform: translate(-50%,-50%) rotate(360deg); } }
 
-
-.light-ring::before{
-
-    content:"";
-
-    position:absolute;
-
-    inset:70px;
-
-    border-radius:50%;
-
-    border:
-        1px solid
-        rgba(255,255,255,.035);
-
-}
-
-
-.light-ring::after{
-
-    content:"";
-
-    position:absolute;
-
-    inset:140px;
-
-    border-radius:50%;
-
-    border:
-        1px solid
-        rgba(255,180,130,.045);
-
-}
-
-
-@keyframes ringRotate{
-
-    to{
-
-        transform:
-            translate(-50%,-50%)
-            rotate(360deg);
-
-    }
-
-}
-
-
-/* =====================================================
-   TOUCH GLOW
-===================================================== */
-
+/* TOUCH GLOW */
 .touch-glow{
-
-    position:absolute;
-
-    width:25px;
-    height:25px;
-
-    border-radius:50%;
-
-    pointer-events:none;
-
-    background:
-        radial-gradient(
-            circle,
-            rgba(255,230,205,.9),
-            rgba(255,160,100,.35),
-            transparent 70%
-        );
-
-    transform:
-        translate(-50%,-50%)
-        scale(0);
-
-    z-index:55;
-
+    position:absolute; width:25px; height:25px; border-radius:50%; pointer-events:none;
+    background: radial-gradient(circle, rgba(255,230,205,.9), rgba(255,160,100,.35), transparent 70%);
+    transform: translate(-50%,-50%) scale(0); z-index:55;
 }
-
-
-.touch-glow.active{
-
-    animation:
-        touchGlow .8s ease-out forwards;
-
-}
-
-
+.touch-glow.active{ animation: touchGlow .8s ease-out forwards; }
 @keyframes touchGlow{
-
-    0%{
-        opacity:1;
-        transform:
-            translate(-50%,-50%)
-            scale(.3);
-    }
-
-    100%{
-        opacity:0;
-        transform:
-            translate(-50%,-50%)
-            scale(7);
-    }
-
+    0%{ opacity:1; transform: translate(-50%,-50%) scale(.3); }
+    100%{ opacity:0; transform: translate(-50%,-50%) scale(7); }
 }
 
-
-/* =====================================================
-   AHMED SIGNATURE
-===================================================== */
-
+/* AHMED SIGNATURE */
 .ahmed-signature{
-
-    position:fixed;
-
-    right:16px;
-    bottom:14px;
-
-    z-index:100;
-
-    display:flex;
-
-    align-items:center;
-
-    gap:7px;
-
-    direction:ltr;
-
-    padding:7px 11px;
-
-    border-radius:50px;
-
-    background:
-        rgba(10,7,13,.42);
-
-    border:
-        1px solid
-        rgba(255,210,170,.10);
-
-    backdrop-filter:blur(12px);
-
-    -webkit-backdrop-filter:blur(12px);
-
-    color:
-        rgba(255,255,255,.48);
-
-    font-family:
-        "Playfair Display",
-        serif;
-
-    font-size:11px;
-
-    letter-spacing:2px;
-
-    pointer-events:none;
-
-    box-shadow:
-
-        0 0 18px
-        rgba(255,150,100,.06),
-
-        inset 0 0 12px
-        rgba(255,255,255,.025);
-
-    animation:
-        ahmedFloat 3s ease-in-out infinite;
-
+    position:fixed; right:16px; bottom:14px; z-index:100; display:flex; align-items:center; gap:7px;
+    direction:ltr; padding:7px 11px; border-radius:50px; background: rgba(10,7,13,.42);
+    border: 1px solid rgba(255,210,170,.10); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px);
+    color: rgba(255,255,255,.48); font-family: "Playfair Display", serif; font-size:11px;
+    letter-spacing:2px; pointer-events:none;
+    box-shadow: 0 0 18px rgba(255,150,100,.06), inset 0 0 12px rgba(255,255,255,.025);
+    animation: ahmedFloat 3s ease-in-out infinite;
 }
-
-
 .ahmed-light{
-
-    position:relative;
-
-    width:6px;
-    height:6px;
-
-    border-radius:50%;
-
-    background:#ffd9b8;
-
-    box-shadow:
-
-        0 0 5px #ffd9b8,
-
-        0 0 12px
-        rgba(255,170,110,.9),
-
-        0 0 22px
-        rgba(255,120,70,.45);
-
-    animation:
-        ahmedLight 1.5s ease-in-out infinite;
-
+    position:relative; width:6px; height:6px; border-radius:50%; background:#ffd9b8;
+    box-shadow: 0 0 5px #ffd9b8, 0 0 12px rgba(255,170,110,.9), 0 0 22px rgba(255,120,70,.45);
+    animation: ahmedLight 1.5s ease-in-out infinite;
 }
-
-
 .ahmed-light::after{
-
-    content:"";
-
-    position:absolute;
-
-    inset:-5px;
-
-    border-radius:50%;
-
-    border:
-        1px solid
-        rgba(255,180,120,.12);
-
-    animation:
-        ahmedPulse 1.5s ease-in-out infinite;
-
+    content:""; position:absolute; inset:-5px; border-radius:50%; border: 1px solid rgba(255,180,120,.12);
+    animation: ahmedPulse 1.5s ease-in-out infinite;
 }
+@keyframes ahmedLight{ 0%,100%{ opacity:.55; transform:scale(.8); } 50%{ opacity:1; transform:scale(1.25); } }
+@keyframes ahmedPulse{ 0%,100%{ transform:scale(.7); opacity:0; } 50%{ transform:scale(1.4); opacity:.8; } }
+@keyframes ahmedFloat{ 0%,100%{ transform:translateY(0); } 50%{ transform:translateY(-2px); } }
 
-
-@keyframes ahmedLight{
-
-    0%,100%{
-        opacity:.55;
-        transform:scale(.8);
-    }
-
-    50%{
-        opacity:1;
-        transform:scale(1.25);
-    }
-
-}
-
-
-@keyframes ahmedPulse{
-
-    0%,100%{
-        transform:scale(.7);
-        opacity:0;
-    }
-
-    50%{
-        transform:scale(1.4);
-        opacity:.8;
-    }
-
-}
-
-
-@keyframes ahmedFloat{
-
-    0%,100%{
-        transform:translateY(0);
-    }
-
-    50%{
-        transform:translateY(-2px);
-    }
-
-}
-
-
-/* =====================================================
-   WELCOME
-===================================================== */
-
+/* WELCOME */
 .welcome{
-
-    position:absolute;
-
-    inset:0;
-
-    z-index:20;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    text-align:center;
-
-    transition:
-
-        opacity 1.2s ease,
-
-        visibility 1.2s ease,
-
-        transform 1.4s
-        cubic-bezier(.16,1,.3,1);
-
+    position:absolute; inset:0; z-index:20; display:flex; align-items:center; justify-content:center;
+    text-align:center; transition: opacity 1.2s ease, visibility 1.2s ease, transform 1.4s cubic-bezier(.16,1,.3,1);
 }
-
-
-.welcome.hide{
-
-    opacity:0;
-
-    visibility:hidden;
-
-    transform:
-        scale(1.12);
-
-}
-
-
-.welcome-content{
-
-    width:min(92%,720px);
-
-    max-width:720px;
-
-    margin:0 auto;
-
-    position:relative;
-
-    z-index:5;
-
-    text-align:center;
-
-}
-
-
-.welcome-eyebrow{
-
-    font-size:9px;
-
-    letter-spacing:7px;
-
-    color:
-        rgba(255,255,255,.38);
-
-    margin-bottom:25px;
-
-    animation:
-        fadeUp 1.4s .2s both;
-
-}
-
-
+.welcome.hide{ opacity:0; visibility:hidden; transform: scale(1.12); }
+.welcome-content{ width:min(92%,720px); max-width:720px; margin:0 auto; position:relative; z-index:5; text-align:center; }
+.welcome-eyebrow{ font-size:9px; letter-spacing:7px; color: rgba(255,255,255,.38); margin-bottom:25px; animation: fadeUp 1.4s .2s both; }
 .welcome-title{
-
-    margin:0;
-
-    font-family:
-        "Playfair Display",
-        serif;
-
-    font-size:
-        clamp(65px,17vw,125px);
-
-    font-weight:500;
-
-    line-height:1;
-
-    background:
-
-        linear-gradient(
-            90deg,
-            #fff,
-            #efb284,
-            #fff,
-            #d9996b,
-            #fff
-        );
-
-    background-size:300% auto;
-
-    -webkit-background-clip:text;
-
-    background-clip:text;
-
-    color:transparent;
-
-    animation:
-
-        titleShine 5s
-        linear infinite,
-
-        fadeScale 1.5s .35s both;
-
+    margin:0; font-family: "Playfair Display", serif; font-size: clamp(65px,17vw,125px); font-weight:500; line-height:1;
+    background: linear-gradient(90deg, #fff, #efb284, #fff, #d9996b, #fff); background-size:300% auto;
+    -webkit-background-clip:text; background-clip:text; color:transparent;
+    animation: titleShine 5s linear infinite, fadeScale 1.5s .35s both;
 }
-
-
-@keyframes titleShine{
-
-    to{
-        background-position:
-            300% center;
-    }
-
-}
-
-
-@keyframes fadeScale{
-
-    from{
-        opacity:0;
-        transform:scale(.75);
-    }
-
-    to{
-        opacity:1;
-        transform:scale(1);
-    }
-
-}
-
-
-@keyframes fadeUp{
-
-    from{
-        opacity:0;
-        transform:translateY(20px);
-    }
-
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-
-}
-
-
-.welcome-line{
-
-    width:180px;
-
-    height:1px;
-
-    margin:
-        25px auto;
-
-    background:
-
-        linear-gradient(
-            90deg,
-            transparent,
-            rgba(245,185,145,.8),
-            transparent
-        );
-
-    animation:
-        fadeUp 1s .8s both;
-
-}
-
-
-.welcome-text{
-
-    width:100%;
-
-    color:
-        rgba(255,255,255,.52);
-
-    font-size:13px;
-
-    line-height:2.1;
-
-    animation:
-        fadeUp 1s 1s both;
-
-}
-
-
+@keyframes titleShine{ to{ background-position: 300% center; } }
+@keyframes fadeScale{ from{ opacity:0; transform:scale(.75); } to{ opacity:1; transform:scale(1); } }
+@keyframes fadeUp{ from{ opacity:0; transform:translateY(20px); } to{ opacity:1; transform:translateY(0); } }
+.welcome-line{ width:180px; height:1px; margin: 25px auto; background: linear-gradient(90deg, transparent, rgba(245,185,145,.8), transparent); animation: fadeUp 1s .8s both; }
+.welcome-text{ width:100%; color: rgba(255,255,255,.52); font-size:13px; line-height:2.1; animation: fadeUp 1s 1s both; }
 .glass-button{
-
-    position:relative;
-
-    margin-top:38px;
-
-    width:245px;
-
-    height:62px;
-
-    border-radius:100px;
-
-    border:
-        1px solid
-        rgba(255,220,190,.2);
-
-    background:
-
-        linear-gradient(
-            120deg,
-            rgba(255,255,255,.06),
-            rgba(255,160,100,.04)
-        );
-
-    backdrop-filter:
-        blur(22px);
-
-    color:white;
-
-    cursor:pointer;
-
-    transition:.4s;
-
-    animation:
-        fadeUp 1s 1.2s both;
-
+    position:relative; margin-top:38px; width:245px; height:62px; border-radius:100px; border: 1px solid rgba(255,220,190,.2);
+    background: linear-gradient(120deg, rgba(255,255,255,.06), rgba(255,160,100,.04)); backdrop-filter: blur(22px);
+    color:white; cursor:pointer; transition:.4s; animation: fadeUp 1s 1.2s both;
 }
+.glass-button:hover{ transform: translateY(-5px); border-color: rgba(255,190,150,.6); box-shadow: 0 15px 70px rgba(255,130,80,.15); }
+.glass-button:before{ content:""; position:absolute; inset:-8px; border-radius:inherit; border: 1px solid rgba(255,180,130,.08); animation: buttonPulse 2.4s infinite; }
+@keyframes buttonPulse{ 50%{ inset:-14px; opacity:.15; } }
 
-
-.glass-button:hover{
-
-    transform:
-        translateY(-5px);
-
-    border-color:
-        rgba(255,190,150,.6);
-
-    box-shadow:
-
-        0 15px 70px
-        rgba(255,130,80,.15);
-
-}
-
-
-.glass-button:before{
-
-    content:"";
-
-    position:absolute;
-
-    inset:-8px;
-
-    border-radius:inherit;
-
-    border:
-        1px solid
-        rgba(255,180,130,.08);
-
-    animation:
-        buttonPulse 2.4s infinite;
-
-}
-
-
-@keyframes buttonPulse{
-
-    50%{
-
-        inset:-14px;
-
-        opacity:.15;
-
-    }
-
-}
-
-
-/* =====================================================
-   PRESENTATION
-===================================================== */
-
-.presentation{
-
-    position:absolute;
-
-    inset:0;
-
-    z-index:12;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    text-align:center;
-
-    opacity:0;
-
-    visibility:hidden;
-
-    transition:
-        opacity 1s ease;
-
-}
-
-
-.presentation.show{
-
-    opacity:1;
-
-    visibility:visible;
-
-}
-
-
+/* PRESENTATION */
+.presentation{ position:absolute; inset:0; z-index:12; display:flex; align-items:center; justify-content:center; text-align:center; opacity:0; visibility:hidden; transition: opacity 1s ease; }
+.presentation.show{ opacity:1; visibility:visible; }
 .top-label{
-
-    position:absolute;
-
-    top:30px;
-
-    left:50%;
-
-    transform:
-        translateX(-50%);
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    gap:12px;
-
-    width:max-content;
-
-    max-width:90%;
-
-    font-size:8px;
-
-    letter-spacing:5px;
-
-    color:
-        rgba(255,255,255,.38);
-
-    white-space:nowrap;
-
+    position:absolute; top:30px; left:50%; transform: translateX(-50%); display:flex; align-items:center; justify-content:center;
+    gap:12px; width:max-content; max-width:90%; font-size:8px; letter-spacing:5px; color: rgba(255,255,255,.38); white-space:nowrap;
 }
-
-
-.top-label::before,
-.top-label::after{
-
-    content:"";
-
-    width:30px;
-
-    min-width:30px;
-
-    height:1px;
-
-    background:
-        linear-gradient(
-            90deg,
-            transparent,
-            rgba(255,200,160,.5)
-        );
-
-}
-
-
-.top-label::after{
-
-    background:
-        linear-gradient(
-            90deg,
-            rgba(255,200,160,.5),
-            transparent
-        );
-
-}
-
-
+.top-label::before, .top-label::after{ content:""; width:30px; min-width:30px; height:1px; background: linear-gradient(90deg, transparent, rgba(255,200,160,.5)); }
+.top-label::after{ background: linear-gradient(90deg, rgba(255,200,160,.5), transparent); }
 .scene-text{
-
-    position:absolute;
-
-    left:50%;
-
-    top:50%;
-
-    width:min(90%,700px);
-
-    max-width:700px;
-
-    margin:0;
-
-    padding:0 10px;
-
-    transform:
-        translate(-50%,calc(-50% + 35px))
-        scale(.95);
-
-    font-size:
-        clamp(25px,6vw,47px);
-
-    font-weight:300;
-
-    line-height:1.9;
-
-    color:
-        rgba(255,255,255,.92);
-
-    opacity:0;
-
-    transition:
-
-        opacity .9s ease,
-
-        transform 1.1s
-        cubic-bezier(.16,1,.3,1);
-
-    text-align:center;
-
-    overflow-wrap:break-word;
-
+    position:absolute; left:50%; top:50%; width:min(90%,700px); max-width:700px; margin:0; padding:0 10px;
+    transform: translate(-50%,calc(-50% + 35px)) scale(.95); font-size: clamp(25px,6vw,47px); font-weight:300; line-height:1.9;
+    color: rgba(255,255,255,.92); opacity:0; transition: opacity .9s ease, transform 1.1s cubic-bezier(.16,1,.3,1); text-align:center; overflow-wrap:break-word;
 }
+.scene-text.show{ opacity:1; transform: translate(-50%,-50%) scale(1); }
+.scene-text strong{ color:#efb284; font-weight:500; text-shadow: 0 0 20px rgba(255,150,90,.35); }
 
-
-.scene-text.show{
-
-    opacity:1;
-
-    transform:
-        translate(-50%,-50%)
-        scale(1);
-
-}
-
-
-.scene-text strong{
-
-    color:#efb284;
-
-    font-weight:500;
-
-    text-shadow:
-
-        0 0 20px
-        rgba(255,150,90,.35);
-
-}
-
-
-/* =====================================================
-   PRESENTATION FINAL
-===================================================== */
-
+/* PRESENTATION FINAL */
 .presentation .final-content{
-
-    position:absolute;
-
-    left:50%;
-
-    top:50%;
-
-    width:min(92%,700px);
-
-    max-width:700px;
-
-    margin:0;
-
-    text-align:center;
-
-    transform:
-        translate(-50%,calc(-50% + 30px))
-        scale(.85);
-
-    opacity:0;
-
-    transition:
-
-        opacity 1.4s ease,
-
-        transform 1.5s
-        cubic-bezier(.16,1,.3,1);
-
+    position:absolute; left:50%; top:50%; width:min(92%,700px); max-width:700px; margin:0; text-align:center;
+    transform: translate(-50%,calc(-50% + 30px)) scale(.85); opacity:0; transition: opacity 1.4s ease, transform 1.5s cubic-bezier(.16,1,.3,1);
 }
-
-
-.presentation .final-content.show{
-
-    opacity:1;
-
-    transform:
-        translate(-50%,-50%)
-        scale(1);
-
-}
-
-
-.final-small{
-
-    font-size:10px;
-
-    letter-spacing:5px;
-
-    color:
-        rgba(255,255,255,.43);
-
-}
-
-
+.presentation .final-content.show{ opacity:1; transform: translate(-50%,-50%) scale(1); }
+.final-small{ font-size:10px; letter-spacing:5px; color: rgba(255,255,255,.43); }
 .age{
-
-    position:relative;
-
-    margin-top:28px;
-
-    font-family:
-        "Playfair Display",
-        serif;
-
-    font-size:
-        clamp(125px,35vw,255px);
-
-    font-weight:500;
-
-    line-height:.7;
-
-    letter-spacing:-12px;
-
-    background:
-
-        linear-gradient(
-            180deg,
-            #ffffff 0%,
-            #ffe8d5 38%,
-            #e6a071 75%,
-            #92553a 100%
-        );
-
-    -webkit-background-clip:text;
-
-    background-clip:text;
-
-    color:transparent;
-
-    filter:
-
-        drop-shadow(
-            0 0 35px
-            rgba(255,160,100,.2)
-        );
-
+    position:relative; margin-top:28px; font-family: "Playfair Display", serif; font-size: clamp(125px,35vw,255px);
+    font-weight:500; line-height:.7; letter-spacing:-12px;
+    background: linear-gradient(180deg, #ffffff 0%, #ffe8d5 38%, #e6a071 75%, #92553a 100%);
+    -webkit-background-clip:text; background-clip:text; color:transparent; filter: drop-shadow(0 0 35px rgba(255,160,100,.2));
 }
-
-
 .age::before{
-
-    content:"";
-
-    position:absolute;
-
-    left:50%;
-    top:50%;
-
-    width:220px;
-    height:220px;
-
-    transform:
-        translate(-50%,-50%);
-
-    border-radius:50%;
-
-    background:
-
-        radial-gradient(
-            circle,
-            rgba(255,170,110,.18),
-            transparent 70%
-        );
-
-    filter:blur(45px);
-
-    z-index:-1;
-
+    content:""; position:absolute; left:50%; top:50%; width:220px; height:220px; transform: translate(-50%,-50%);
+    border-radius:50%; background: radial-gradient(circle, rgba(255,170,110,.18), transparent 70%); filter:blur(45px); z-index:-1;
 }
-
-
-.happy{
-
-    margin-top:45px;
-
-    font-size:
-        clamp(23px,6vw,43px);
-
-    font-weight:300;
-
-}
-
-
-.happy span{
-
-    color:#eab07f;
-
-    text-shadow:
-        0 0 20px
-        rgba(255,160,100,.3);
-
-}
-
-
+.happy{ margin-top:45px; font-size: clamp(23px,6vw,43px); font-weight:300; }
+.happy span{ color:#eab07f; text-shadow: 0 0 20px rgba(255,160,100,.3); }
 .name{
-
-    margin-top:2px;
-
-    font-size:
-        clamp(44px,11vw,85px);
-
-    font-weight:600;
-
-    background:
-
-        linear-gradient(
-            90deg,
-            #fff,
-            #e7b087,
-            #fff,
-            #d9996b,
-            #fff
-        );
-
-    background-size:300% auto;
-
-    -webkit-background-clip:text;
-
-    background-clip:text;
-
-    color:transparent;
-
-    animation:
-        nameShine 5s linear infinite;
-
+    margin-top:2px; font-size: clamp(44px,11vw,85px); font-weight:600;
+    background: linear-gradient(90deg, #fff, #e7b087, #fff, #d9996b, #fff); background-size:300% auto;
+    -webkit-background-clip:text; background-clip:text; color:transparent; animation: nameShine 5s linear infinite;
 }
+@keyframes nameShine{ to{ background-position: 300% center; } }
+.final-line{ width:190px; height:1px; margin:25px auto; background: linear-gradient(90deg, transparent, rgba(245,185,145,.8), transparent); }
+.final-description{ color: rgba(255,255,255,.5); font-size:12px; line-height:2.1; }
+.progress{ position:absolute; bottom:22px; left:50%; transform: translateX(-50%); width:120px; height:1px; background: rgba(255,255,255,.08); }
+.progress-bar{ width:0; height:100%; background: linear-gradient(90deg, transparent, #e8ad7c, transparent); transition: width .8s ease; }
 
-
-@keyframes nameShine{
-
-    to{
-        background-position:
-            300% center;
-    }
-
-}
-
-
-.final-line{
-
-    width:190px;
-
-    height:1px;
-
-    margin:25px auto;
-
-    background:
-
-        linear-gradient(
-            90deg,
-            transparent,
-            rgba(245,185,145,.8),
-            transparent
-        );
-
-}
-
-
-.final-description{
-
-    color:
-        rgba(255,255,255,.5);
-
-    font-size:12px;
-
-    line-height:2.1;
-
-}
-
-
-.progress{
-
-    position:absolute;
-
-    bottom:22px;
-
-    left:50%;
-
-    transform:
-        translateX(-50%);
-
-    width:120px;
-
-    height:1px;
-
-    background:
-        rgba(255,255,255,.08);
-
-}
-
-
-.progress-bar{
-
-    width:0;
-
-    height:100%;
-
-    background:
-
-        linear-gradient(
-            90deg,
-            transparent,
-            #e8ad7c,
-            transparent
-        );
-
-    transition:
-        width .8s ease;
-
-}
-
-
-/* =====================================================
-   WISH SCREEN
-===================================================== */
-
+/* WISH SCREEN */
 .wish-screen{
-
-    position:absolute;
-
-    inset:0;
-
-    z-index:18;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    text-align:center;
-
-    opacity:0;
-
-    visibility:hidden;
-
-    transform:scale(1.08);
-
-    transition:
-
-        opacity 1s ease,
-
-        visibility 1s ease,
-
-        transform 1.2s
-        cubic-bezier(.16,1,.3,1);
-
+    position:absolute; inset:0; z-index:18; display:flex; align-items:center; justify-content:center; text-align:center;
+    opacity:0; visibility:hidden; transform:scale(1.08); transition: opacity 1s ease, visibility 1s ease, transform 1.2s cubic-bezier(.16,1,.3,1);
 }
-
-
-.wish-screen.show{
-
-    opacity:1;
-
-    visibility:visible;
-
-    transform:scale(1);
-
-}
-
-
-.wish-content{
-
-    width:min(92%,650px);
-
-    max-width:650px;
-
-    margin:0 auto;
-
-    text-align:center;
-
-}
-
-
+.wish-screen.show{ opacity:1; visibility:visible; transform:scale(1); }
+.wish-content{ width:min(92%,650px); max-width:650px; margin:0 auto; text-align:center; }
 .wish-icon{
-
-    width:80px;
-    height:80px;
-
-    margin:auto;
-
-    border-radius:50%;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    font-size:32px;
-
-    background:
-        rgba(255,255,255,.035);
-
-    border:
-        1px solid
-        rgba(255,200,160,.16);
-
-    box-shadow:
-
-        0 0 60px
-        rgba(255,150,100,.12),
-
-        inset 0 0 30px
-        rgba(255,150,100,.05);
-
-    animation:
-        wishFloat 3s ease-in-out infinite;
-
+    width:80px; height:80px; margin:auto; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:32px;
+    background: rgba(255,255,255,.035); border: 1px solid rgba(255,200,160,.16);
+    box-shadow: 0 0 60px rgba(255,150,100,.12), inset 0 0 30px rgba(255,150,100,.05); animation: wishFloat 3s ease-in-out infinite;
 }
+@keyframes wishFloat{ 50%{ transform:translateY(-10px); } }
+.wish-title{ margin-top:30px; width:100%; font-size: clamp(29px,7vw,48px); font-weight:300; line-height:1.6; }
+.wish-title span{ color:#eab07f; }
+.wish-text{ width:100%; color: rgba(255,255,255,.48); font-size:12px; line-height:2; margin-top:15px; }
+.wish-button{ margin-top:30px; width:210px; height:55px; border-radius:100px; border: 1px solid rgba(255,210,170,.2); background: rgba(255,255,255,.045); color:white; cursor:pointer; transition:.35s; }
+.wish-button:hover{ transform:translateY(-4px); border-color: rgba(255,190,150,.6); }
 
-
-@keyframes wishFloat{
-
-    50%{
-        transform:translateY(-10px);
-    }
-
-}
-
-
-.wish-title{
-
-    margin-top:30px;
-
-    width:100%;
-
-    font-size:
-        clamp(29px,7vw,48px);
-
-    font-weight:300;
-
-    line-height:1.6;
-
-}
-
-
-.wish-title span{
-
-    color:#eab07f;
-
-}
-
-
-.wish-text{
-
-    width:100%;
-
-    color:
-        rgba(255,255,255,.48);
-
-    font-size:12px;
-
-    line-height:2;
-
-    margin-top:15px;
-
-}
-
-
-.wish-button{
-
-    margin-top:30px;
-
-    width:210px;
-
-    height:55px;
-
-    border-radius:100px;
-
-    border:
-        1px solid
-        rgba(255,210,170,.2);
-
-    background:
-        rgba(255,255,255,.045);
-
-    color:white;
-
-    cursor:pointer;
-
-    transition:.35s;
-
-}
-
-
-.wish-button:hover{
-
-    transform:translateY(-4px);
-
-    border-color:
-        rgba(255,190,150,.6);
-
-}
-
-
-/* =====================================================
-   CAKE
-===================================================== */
-
+/* CAKE */
 .cake-screen{
-
-    position:absolute;
-
-    inset:0;
-
-    z-index:20;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    text-align:center;
-
-    opacity:0;
-
-    visibility:hidden;
-
-    transform:scale(.9);
-
-    transition:
-
-        opacity 1.2s ease,
-
-        visibility 1.2s ease,
-
-        transform 1.3s
-        cubic-bezier(.16,1,.3,1);
-
+    position:absolute; inset:0; z-index:20; display:flex; align-items:center; justify-content:center; text-align:center;
+    opacity:0; visibility:hidden; transform:scale(.9); transition: opacity 1.2s ease, visibility 1.2s ease, transform 1.3s cubic-bezier(.16,1,.3,1);
 }
-
-
-.cake-screen.show{
-
-    opacity:1;
-
-    visibility:visible;
-
-    transform:scale(1);
-
-}
-
-
-.cake-wrapper{
-
-    width:min(95%,520px);
-
-    max-width:520px;
-
-    margin:0 auto;
-
-    position:relative;
-
-    text-align:center;
-
-}
-
-
-.cake-heading{
-
-    width:100%;
-
-    font-size:
-        clamp(27px,7vw,45px);
-
-    font-weight:300;
-
-    line-height:1.5;
-
-}
-
-
-.cake-heading span{
-
-    color:#eab07f;
-
-}
-
-
-.cake-subtitle{
-
-    width:100%;
-
-    margin-top:8px;
-
-    color:
-        rgba(255,255,255,.45);
-
-    font-size:11px;
-
-    line-height:1.9;
-
-}
-
-
-.cake{
-
-    position:relative;
-
-    width:390px;
-
-    max-width:90vw;
-
-    height:280px;
-
-    margin:
-        5px auto 0;
-
-}
-
-
-.plate{
-
-    position:absolute;
-
-    left:50%;
-
-    bottom:20px;
-
-    transform:
-        translateX(-50%);
-
-    width:360px;
-
-    max-width:88vw;
-
-    height:28px;
-
-    border-radius:50%;
-
-    background:
-
-        linear-gradient(
-            180deg,
-            #eee,
-            #777,
-            #eee
-        );
-
-    box-shadow:
-
-        0 0 40px
-        rgba(255,190,150,.18);
-
-}
-
-
+.cake-screen.show{ opacity:1; visibility:visible; transform:scale(1); }
+.cake-wrapper{ width:min(95%,520px); max-width:520px; margin:0 auto; position:relative; text-align:center; }
+.cake-heading{ width:100%; font-size: clamp(27px,7vw,45px); font-weight:300; line-height:1.5; }
+.cake-heading span{ color:#eab07f; }
+.cake-subtitle{ width:100%; margin-top:8px; color: rgba(255,255,255,.45); font-size:11px; line-height:1.9; }
+.cake{ position:relative; width:390px; max-width:90vw; height:280px; margin: 5px auto 0; }
+.plate{ position:absolute; left:50%; bottom:20px; transform: translateX(-50%); width:360px; max-width:88vw; height:28px; border-radius:50%; background: linear-gradient(180deg, #eee, #777, #eee); box-shadow: 0 0 40px rgba(255,190,150,.18); }
 .cake-base{
-
-    position:absolute;
-
-    left:50%;
-
-    bottom:42px;
-
-    transform:
-        translateX(-50%);
-
-    width:310px;
-
-    max-width:74vw;
-
-    height:118px;
-
-    border-radius:
-        18px 18px 30px 30px;
-
-    background:
-
-        linear-gradient(
-            90deg,
-            #5e241d,
-            #a9533c,
-            #efb08c,
-            #c06b4e,
-            #65271f
-        );
-
-    box-shadow:
-
-        inset 0 -15px 25px
-        rgba(0,0,0,.25),
-
-        0 15px 35px
-        rgba(0,0,0,.3);
-
+    position:absolute; left:50%; bottom:42px; transform: translateX(-50%); width:310px; max-width:74vw; height:118px; border-radius: 18px 18px 30px 30px;
+    background: linear-gradient(90deg, #5e241d, #a9533c, #efb08c, #c06b4e, #65271f); box-shadow: inset 0 -15px 25px rgba(0,0,0,.25), 0 15px 35px rgba(0,0,0,.3);
 }
-
-
-.cake-layer{
-
-    position:absolute;
-
-    left:50%;
-
-    bottom:105px;
-
-    transform:
-        translateX(-50%);
-
-    width:315px;
-
-    max-width:76vw;
-
-    height:80px;
-
-    border-radius:50%;
-
-    background:
-
-        linear-gradient(
-            180deg,
-            #fff8f1,
-            #e7a57e
-        );
-
-}
-
-
-.cake-cream{
-
-    position:absolute;
-
-    left:50%;
-
-    bottom:127px;
-
-    transform:
-        translateX(-50%);
-
-    width:302px;
-
-    max-width:73vw;
-
-    height:48px;
-
-    border-radius:50%;
-
-    background:
-        rgba(255,247,238,.96);
-
-    box-shadow:
-        0 4px 10px rgba(0,0,0,.2);
-
-}
-
-
-.cake-cream::before{
-
-    content:"";
-
-    position:absolute;
-
-    left:8%;
-
-    right:8%;
-
-    bottom:-22px;
-
-    height:32px;
-
-    border-radius:50%;
-
-    background:
-        rgba(255,240,228,.92);
-
-}
-
-
-.candle-row{
-
-    position:absolute;
-
-    left:50%;
-
-    bottom:168px;
-
-    transform:
-        translateX(-50%);
-
-    width:285px;
-
-    max-width:70vw;
-
-    display:flex;
-
-    align-items:flex-end;
-
-    justify-content:center;
-
-    gap:5px;
-
-    direction:ltr;
-
-}
-
-
+.cake-layer{ position:absolute; left:50%; bottom:105px; transform: translateX(-50%); width:315px; max-width:76vw; height:80px; border-radius:50%; background: linear-gradient(180deg, #fff8f1, #e7a57e); }
+.cake-cream{ position:absolute; left:50%; bottom:127px; transform: translateX(-50%); width:302px; max-width:73vw; height:48px; border-radius:50%; background: rgba(255,247,238,.96); box-shadow: 0 4px 10px rgba(0,0,0,.2); }
+.cake-cream::before{ content:""; position:absolute; left:8%; right:8%; bottom:-22px; height:32px; border-radius:50%; background: rgba(255,240,228,.92); }
+.candle-row{ position:absolute; left:50%; bottom:168px; transform: translateX(-50%); width:285px; max-width:70vw; display:flex; align-items:flex-end; justify-content:center; gap:5px; direction:ltr; }
 .candle{
-
-    position:relative;
-
-    width:8px;
-
-    height:52px;
-
-    border-radius:
-        5px 5px 3px 3px;
-
-    background:
-
-        repeating-linear-gradient(
-            135deg,
-            #fff 0 7px,
-            #e4a276 7px 14px
-        );
-
-    box-shadow:
-        0 2px 7px
-        rgba(0,0,0,.3);
-
-    transition:
-        transform .4s,
-        opacity .5s;
-
+    position:relative; width:8px; height:52px; border-radius: 5px 5px 3px 3px;
+    background: repeating-linear-gradient(135deg, #fff 0 7px, #e4a276 7px 14px);
+    box-shadow: 0 2px 7px rgba(0,0,0,.3); transition: transform .4s, opacity .5s;
 }
-
-
-.candle:nth-child(2n){
-
-    height:62px;
-
-}
-
-
-.candle:nth-child(3n){
-
-    height:46px;
-
-}
-
-
+.candle:nth-child(2n){ height:62px; }
+.candle:nth-child(3n){ height:46px; }
 .flame{
-
-    position:absolute;
-
-    left:50%;
-
-    top:-27px;
-
-    transform:
-        translateX(-50%);
-
-    width:13px;
-
-    height:21px;
-
-    border-radius:
-        50% 50% 50% 50%;
-
-    background:
-
-        radial-gradient(
-            circle at 50% 70%,
-            #fff 0 22%,
-            #ffd48e 23% 55%,
-            #ff8649 56% 100%
-        );
-
-    box-shadow:
-
-        0 0 12px
-        rgba(255,200,120,.9),
-
-        0 0 28px
-        rgba(255,120,50,.7);
-
-    animation:
-        flameFlicker .13s
-        infinite alternate;
-
+    position:absolute; left:50%; top:-27px; transform: translateX(-50%); width:13px; height:21px; border-radius: 50%;
+    background: radial-gradient(circle at 50% 70%, #fff 0 22%, #ffd48e 23% 55%, #ff8649 56% 100%);
+    box-shadow: 0 0 12px rgba(255,200,120,.9), 0 0 28px rgba(255,120,50,.7);
+    animation: flameFlicker .13s infinite alternate;
 }
-
-
 @keyframes flameFlicker{
-
-    from{
-        transform:
-            translateX(-50%)
-            scale(1)
-            rotate(-2deg);
-    }
-
-    to{
-        transform:
-            translateX(-50%)
-            scale(.82)
-            rotate(3deg);
-    }
-
+    from{ transform: translateX(-50%) scale(1) rotate(-2deg); }
+    to{ transform: translateX(-50%) scale(.82) rotate(3deg); }
 }
-
-
-.smoke{
-
-    position:absolute;
-
-    left:50%;
-
-    top:-30px;
-
-    width:8px;
-
-    height:30px;
-
-    border-radius:50%;
-
-    background:
-        rgba(255,255,255,.18);
-
-    filter:blur(4px);
-
-    opacity:0;
-
-}
-
-
-.candle.off{
-
-    transform:
-        translateY(8px);
-
-    opacity:.75;
-
-}
-
-
-.candle.off .flame{
-
-    display:none;
-
-}
-
-
-.candle.off .smoke{
-
-    animation:
-        smokeRise 1.7s ease-out forwards;
-
-}
-
-
-@keyframes smokeRise{
-
-    0%{
-
-        opacity:.55;
-
-        transform:
-            translateY(0)
-            scale(.7);
-
-    }
-
-    100%{
-
-        opacity:0;
-
-        transform:
-            translateY(-40px)
-            translateX(15px)
-            scale(2);
-
-    }
-
-}
-
-
-/* =====================================================
-   BLOW METER
-===================================================== */
-
-.blow-area{
-
-    width:260px;
-
-    max-width:75vw;
-
-    margin:
-        0 auto;
-
-}
-
-
-.blow-label{
-
-    font-size:10px;
-
-    color:
-        rgba(255,255,255,.4);
-
-    letter-spacing:2px;
-
-}
-
-
-.meter{
-
-    width:100%;
-
-    height:4px;
-
-    margin-top:8px;
-
-    border-radius:10px;
-
-    background:
-        rgba(255,255,255,.08);
-
-    overflow:hidden;
-
-}
-
-
-.meter-fill{
-
-    width:0%;
-
-    height:100%;
-
-    border-radius:inherit;
-
-    background:
-
-        linear-gradient(
-            90deg,
-            #b56bff,
-            #e9ad7c,
-            #fff
-        );
-
-    box-shadow:
-        0 0 15px
-        rgba(255,170,110,.6);
-
-    transition:
-        width .08s linear;
-
-}
-
-
-.mic-status{
-
-    min-height:25px;
-
-    margin-top:12px;
-
-    font-size:12px;
-
-    color:#eab07f;
-
-}
-
-
-.mic-status.ready{
-
-    animation:
-        statusPulse 1.2s infinite;
-
-}
-
-
-@keyframes statusPulse{
-
-    50%{
-        opacity:.4;
-    }
-
-}
-
-
-.mic-button{
-
-    margin-top:5px;
-
-    width:190px;
-
-    height:50px;
-
-    border-radius:100px;
-
-    border:
-        1px solid
-        rgba(255,210,170,.2);
-
-    background:
-        rgba(255,255,255,.045);
-
-    color:white;
-
-    cursor:pointer;
-
-    transition:.35s;
-
-}
-
-
-.mic-button:hover{
-
-    transform:
-        translateY(-3px);
-
-    border-color:
-        rgba(255,190,150,.6);
-
-}
-
-
-/* =====================================================
-   PERSONAL MESSAGE
-===================================================== */
-
+.smoke{ position:absolute; left:50%; top:-30px; width:8px; height:30px; border-radius:50%; background: rgba(255,255,255,.18); filter:blur(4px); opacity:0; }
+.candle.off{ transform: translateY(8px); opacity:.75; }
+.candle.off .flame{ display:none; }
+.candle.off .smoke{ animation: smokeRise 1.7s ease-out forwards; }
+@keyframes smokeRise{ 0%{ opacity:.55; transform: translateY(0) scale(.7); } 100%{ opacity:0; transform: translateY(-40px) translateX(15px) scale(2); } }
+
+/* BLOW METER */
+.blow-area{ width:260px; max-width:75vw; margin: 0 auto; }
+.blow-label{ font-size:10px; color: rgba(255,255,255,.4); letter-spacing:2px; }
+.meter{ width:100%; height:4px; margin-top:8px; border-radius:10px; background: rgba(255,255,255,.08); overflow:hidden; }
+.meter-fill{ width:0%; height:100%; border-radius:inherit; background: linear-gradient(90deg, #b56bff, #e9ad7c, #fff); box-shadow: 0 0 15px rgba(255,170,110,.6); transition: width .08s linear; }
+.mic-status{ min-height:25px; margin-top:12px; font-size:12px; color:#eab07f; }
+.mic-status.ready{ animation: statusPulse 1.2s infinite; }
+@keyframes statusPulse{ 50%{ opacity:.4; } }
+.mic-button{ margin-top:5px; width:190px; height:50px; border-radius:100px; border: 1px solid rgba(255,210,170,.2); background: rgba(255,255,255,.045); color:white; cursor:pointer; transition:.35s; }
+.mic-button:hover{ transform: translateY(-3px); border-color: rgba(255,190,150,.6); }
+
+/* PERSONAL MESSAGE */
 .message-screen{
-
-    position:absolute;
-
-    inset:0;
-
-    z-index:28;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    text-align:center;
-
-    background:
-
-        radial-gradient(
-            circle at center,
-            rgba(255,160,100,.12),
-            transparent 38%
-        ),
-
-        #07050a;
-
-    opacity:0;
-
-    visibility:hidden;
-
-    transition:
-
-        opacity 1.2s ease,
-
-        visibility 1.2s ease;
-
+    position:absolute; inset:0; z-index:28; display:flex; align-items:center; justify-content:center; text-align:center;
+    background: radial-gradient(circle at center, rgba(255,160,100,.12), transparent 38%), #07050a;
+    opacity:0; visibility:hidden; transition: opacity 1.2s ease, visibility 1.2s ease; cursor:pointer;
 }
-
-
-.message-screen.show{
-
-    opacity:1;
-
-    visibility:visible;
-
-}
-
-
-.message-content{
-
-    width:min(90%,680px);
-
-    max-width:680px;
-
-    margin:0 auto;
-
-    padding:0 15px;
-
-    text-align:center;
-
-    overflow-wrap:break-word;
-
-}
-
-
-.message-small{
-
-    font-size:9px;
-
-    letter-spacing:5px;
-
-    color:
-        rgba(255,255,255,.35);
-
-}
-
-
-.message-name{
-
-    margin-top:22px;
-
-    font-size:
-        clamp(40px,10vw,72px);
-
-    color:#eab07f;
-
-}
-
-
+.message-screen.show{ opacity:1; visibility:visible; }
+.message-content{ width:min(90%,680px); max-width:680px; margin:0 auto; padding:0 15px; text-align:center; overflow-wrap:break-word; }
+.message-small{ font-size:9px; letter-spacing:5px; color: rgba(255,255,255,.35); }
+.message-name{ margin-top:22px; font-size: clamp(40px,10vw,72px); color:#eab07f; }
 .message-text{
-
-    width:100%;
-
-    max-width:650px;
-
-    margin:25px auto 0;
-
-    padding:0 5px;
-
-    color:
-        rgba(255,255,255,.65);
-
-    font-size:
-        clamp(15px,4vw,20px);
-
-    line-height:2.3;
-
-    text-align:center;
-
-    overflow-wrap:anywhere;
-
-    word-break:normal;
-
+    width:100%; max-width:650px; margin:25px auto 0; padding:0 5px; color: rgba(255,255,255,.65);
+    font-size: clamp(15px,4vw,20px); line-height:2.3; text-align:center; overflow-wrap:anywhere; word-break:normal;
 }
-
-
-.typing-cursor{
-
-    display:inline-block;
-
-    width:2px;
-
-    height:20px;
-
-    background:#eab07f;
-
-    vertical-align:middle;
-
-    animation:
-        cursorBlink .8s infinite;
-
-}
-
-
-@keyframes cursorBlink{
-
-    50%{
-        opacity:0;
-    }
-
-}
-
-
-/* =====================================================
-   CELEBRATION
-===================================================== */
-
-.celebration{
-
-    position:absolute;
-
-    inset:0;
-
-    z-index:35;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    text-align:center;
-
-    opacity:0;
-
-    visibility:hidden;
-
-    transition:
-
-        opacity 1.2s ease,
-
-        visibility 1.2s ease;
-
-}
-
-
-.celebration.show{
-
-    opacity:1;
-
-    visibility:visible;
-
-}
-
-
-.celebration-content{
-
-    width:min(92%,720px);
-
-    max-width:720px;
-
-    margin:0 auto;
-
-    padding:0 15px;
-
-    text-align:center;
-
-    transform:
-        translateY(35px);
-
-    transition:
-        transform 1.2s
-        cubic-bezier(.16,1,.3,1);
-
-}
-
-
-.celebration.show
-.celebration-content{
-
-    transform:
-        translateY(0);
-
-}
-
-
-.celebration-small{
-
-    font-size:10px;
-
-    letter-spacing:6px;
-
-    color:#e0a375;
-
-}
-
-
-.celebration h2{
-
-    margin:
-        20px 0 0;
-
-    font-size:
-        clamp(43px,11vw,84px);
-
-    font-weight:500;
-
-    line-height:1.35;
-
-}
-
-
-.celebration h2 span{
-
-    color:#e6aa7c;
-
-    text-shadow:
-
-        0 0 30px
-        rgba(255,160,100,.35);
-
-}
-
-
-.celebration p{
-
-    width:100%;
-
-    max-width:550px;
-
-    margin:
-        24px auto;
-
-    color:
-        rgba(255,255,255,.5);
-
-    font-size:13px;
-
-    line-height:2.2;
-
-}
-
-
-.again-button{
-
-    width:200px;
-
-    height:50px;
-
-    border-radius:100px;
-
-    border:
-        1px solid
-        rgba(255,210,170,.18);
-
-    background:
-        rgba(255,255,255,.04);
-
-    color:white;
-
-    cursor:pointer;
-
-}
-
-
-/* =====================================================
-   CONFETTI
-===================================================== */
-
-.confetti{
-
-    position:absolute;
-
-    inset:0;
-
-    overflow:hidden;
-
-    pointer-events:none;
-
-}
-
-
-.confetti i{
-
-    position:absolute;
-
-    top:-30px;
-
-    width:5px;
-
-    height:13px;
-
-    border-radius:2px;
-
-    background:#fff;
-
-    animation:
-        confettiFall 4s linear forwards;
-
-}
-
-
-@keyframes confettiFall{
-
-    to{
-
-        transform:
-            translate(
-                var(--x),
-                110vh
-            )
-            rotate(720deg);
-
-        opacity:0;
-
-    }
-
-}
-
-
-/* =====================================================
-   FINAL CINEMATIC
-===================================================== */
-
-.final-screen{
-
-    position:absolute;
-
-    inset:0;
-
-    z-index:45;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    text-align:center;
-
-    background:#030205;
-
-    opacity:0;
-
-    visibility:hidden;
-
-    transition:
-        opacity 1.5s ease;
-
-}
-
-
-.final-screen.show{
-
-    opacity:1;
-
-    visibility:visible;
-
-}
-
-
+.typing-cursor{ display:inline-block; width:2px; height:20px; background:#eab07f; vertical-align:middle; animation: cursorBlink .8s infinite; }
+@keyframes cursorBlink{ 50%{ opacity:0; } }
+
+/* CELEBRATION */
+.celebration{ position:absolute; inset:0; z-index:35; display:flex; align-items:center; justify-content:center; text-align:center; opacity:0; visibility:hidden; transition: opacity 1.2s ease, visibility 1.2s ease; }
+.celebration.show{ opacity:1; visibility:visible; }
+.celebration-content{ width:min(92%,720px); max-width:720px; margin:0 auto; padding:0 15px; text-align:center; transform: translateY(35px); transition: transform 1.2s cubic-bezier(.16,1,.3,1); }
+.celebration.show .celebration-content{ transform: translateY(0); }
+.celebration-small{ font-size:10px; letter-spacing:6px; color:#e0a375; }
+.celebration h2{ margin: 20px 0 0; font-size: clamp(43px,11vw,84px); font-weight:500; line-height:1.35; }
+.celebration h2 span{ color:#e6aa7c; text-shadow: 0 0 30px rgba(255,160,100,.35); }
+.celebration p{ width:100%; max-width:550px; margin: 24px auto; color: rgba(255,255,255,.5); font-size:13px; line-height:2.2; }
+.again-button{ width:200px; height:50px; border-radius:100px; border: 1px solid rgba(255,210,170,.18); background: rgba(255,255,255,.04); color:white; cursor:pointer; }
+
+/* CONFETTI */
+.confetti{ position:absolute; inset:0; overflow:hidden; pointer-events:none; }
+.confetti i{ position:absolute; top:-30px; width:5px; height:13px; border-radius:2px; animation: confettiFall 4s linear forwards; }
+@keyframes confettiFall{ to{ transform: translate(var(--x), 110vh) rotate(720deg); opacity:0; } }
+
+/* FINAL CINEMATIC */
+.final-screen{ position:absolute; inset:0; z-index:45; display:flex; align-items:center; justify-content:center; text-align:center; background:#030205; opacity:0; visibility:hidden; transition: opacity 1.5s ease; }
+.final-screen.show{ opacity:1; visibility:visible; }
 .final-point{
-
-    position:absolute;
-
-    width:10px;
-
-    height:10px;
-
-    left:50%;
-
-    top:50%;
-
-    border-radius:50%;
-
-    background:white;
-
-    box-shadow:
-
-        0 0 20px white,
-
-        0 0 60px
-        rgba(255,170,110,.9),
-
-        0 0 120px
-        rgba(255,100,80,.4);
-
-    animation:
-        finalPoint 2.2s
-        cubic-bezier(.16,1,.3,1)
-        forwards;
-
+    position:absolute; width:10px; height:10px; left:50%; top:50%; border-radius:50%; background:white;
+    box-shadow: 0 0 20px white, 0 0 60px rgba(255,170,110,.9), 0 0 120px rgba(255,100,80,.4);
+    animation: finalPoint 2.2s cubic-bezier(.16,1,.3,1) forwards;
 }
-
-
-@keyframes finalPoint{
-
-    0%{
-        transform:scale(.2);
-        opacity:0;
-    }
-
-    25%{
-        opacity:1;
-    }
-
-    100%{
-        transform:scale(22);
-        opacity:0;
-    }
-
-}
-
-
-.final-screen .final-content{
-
-    position:absolute;
-
-    left:50%;
-
-    top:50%;
-
-    width:min(92%,720px);
-
-    max-width:720px;
-
-    margin:0;
-
-    padding:0 15px;
-
-    z-index:2;
-
-    opacity:0;
-
-    transform:
-        translate(-50%,-50%)
-        scale(.8);
-
-    text-align:center;
-
-}
-
-
-.final-screen.show
-.final-content{
-
-    animation:
-        finalReveal 2s
-        1s
-        cubic-bezier(.16,1,.3,1)
-        forwards;
-
-}
-
-
-@keyframes finalReveal{
-
-    to{
-
-        opacity:1;
-
-        transform:
-            translate(-50%,-50%)
-            scale(1);
-
-    }
-
-}
-
-
-.final-content .small{
-
-    font-size:9px;
-
-    letter-spacing:6px;
-
-    color:
-        rgba(255,255,255,.35);
-
-}
-
-
+@keyframes finalPoint{ 0%{ transform:scale(.2); opacity:0; } 25%{ opacity:1; } 100%{ transform:scale(22); opacity:0; } }
+.final-screen .final-content{ position:absolute; left:50%; top:50%; width:min(92%,720px); max-width:720px; margin:0; padding:0 15px; z-index:2; opacity:0; transform: translate(-50%,-50%) scale(.8); text-align:center; }
+.final-screen.show .final-content{ animation: finalReveal 2s 1s cubic-bezier(.16,1,.3,1) forwards; }
+@keyframes finalReveal{ to{ opacity:1; transform: translate(-50%,-50%) scale(1); } }
+.final-content .small{ font-size:9px; letter-spacing:6px; color: rgba(255,255,255,.35); }
 .final-content h1{
-
-    margin:
-        18px 0 0;
-
-    font-family:
-        "Playfair Display",
-        serif;
-
-    font-size:
-        clamp(60px,16vw,120px);
-
-    font-weight:500;
-
-    background:
-
-        linear-gradient(
-            90deg,
-            #fff,
-            #e9ad7c,
-            #fff
-        );
-
-    background-size:200%;
-
-    -webkit-background-clip:text;
-
-    background-clip:text;
-
-    color:transparent;
-
-    animation:
-        finalShine 4s linear infinite;
-
+    margin: 18px 0 0; font-family: "Playfair Display", serif; font-size: clamp(60px,16vw,120px); font-weight:500;
+    background: linear-gradient(90deg, #fff, #e9ad7c, #fff); background-size:200%;
+    -webkit-background-clip:text; background-clip:text; color:transparent; animation: finalShine 4s linear infinite;
 }
+@keyframes finalShine{ to{ background-position:200% center; } }
+.final-age{ font-family: "Playfair Display", serif; font-size: clamp(70px,18vw,140px); color:#e8ad7c; line-height:.8; text-shadow: 0 0 35px rgba(255,160,100,.3); }
+.final-quote{ width:100%; max-width:600px; margin:28px auto 0; padding:0 20px; color: rgba(255,255,255,.55); font-size:13px; line-height:2.2; }
+.restart{ margin-top:25px; width:190px; height:48px; border-radius:100px; border: 1px solid rgba(255,210,170,.18); background: rgba(255,255,255,.04); color:white; cursor:pointer; }
 
+/* REVEAL */
+.reveal{ position:absolute; left:50%; top:50%; width:20px; height:20px; border-radius:50%; background:white; transform: translate(-50%,-50%) scale(0); z-index:70; pointer-events:none; }
+.reveal.go{ animation: revealOpen 1.7s cubic-bezier(.16,1,.3,1) forwards; }
+@keyframes revealOpen{ from{ transform: translate(-50%,-50%) scale(0); opacity:1; } to{ transform: translate(-50%,-50%) scale(170); opacity:0; } }
 
-@keyframes finalShine{
-
-    to{
-        background-position:200% center;
-    }
-
-}
-
-
-.final-age{
-
-    font-family:
-        "Playfair Display",
-        serif;
-
-    font-size:
-        clamp(70px,18vw,140px);
-
-    color:#e8ad7c;
-
-    line-height:.8;
-
-    text-shadow:
-        0 0 35px
-        rgba(255,160,100,.3);
-
-}
-
-
-.final-quote{
-
-    width:100%;
-
-    max-width:600px;
-
-    margin:28px auto 0;
-
-    padding:0 20px;
-
-    color:
-        rgba(255,255,255,.55);
-
-    font-size:13px;
-
-    line-height:2.2;
-
-}
-
-
-.restart{
-
-    margin-top:25px;
-
-    width:190px;
-
-    height:48px;
-
-    border-radius:100px;
-
-    border:
-        1px solid
-        rgba(255,210,170,.18);
-
-    background:
-        rgba(255,255,255,.04);
-
-    color:white;
-
-    cursor:pointer;
-
-}
-
-
-/* =====================================================
-   REVEAL
-===================================================== */
-
-.reveal{
-
-    position:absolute;
-
-    left:50%;
-    top:50%;
-
-    width:20px;
-    height:20px;
-
-    border-radius:50%;
-
-    background:white;
-
-    transform:
-        translate(-50%,-50%)
-        scale(0);
-
-    z-index:70;
-
-    pointer-events:none;
-
-}
-
-
-.reveal.go{
-
-    animation:
-        revealOpen 1.7s
-        cubic-bezier(.16,1,.3,1)
-        forwards;
-
-}
-
-
-@keyframes revealOpen{
-
-    from{
-
-        transform:
-            translate(-50%,-50%)
-            scale(0);
-
-        opacity:1;
-
-    }
-
-    to{
-
-        transform:
-            translate(-50%,-50%)
-            scale(170);
-
-        opacity:0;
-
-    }
-
-}
-
-
-/* =====================================================
-   MOBILE
-===================================================== */
-
+/* MEDIA QUERIES & MOBILE OPTIMIZATIONS */
 @media(max-width:600px){
-
-    .light-ring{
-
-        width:310px;
-        height:310px;
-
-    }
-
-    .top-label{
-
-        top:26px;
-
-        font-size:7px;
-
-        letter-spacing:4px;
-
-    }
-
-    .scene-text{
-
-        left:50%;
-
-        width:calc(100% - 30px);
-
-        max-width:calc(100% - 30px);
-
-        padding:0;
-
-        font-size:24px;
-
-        line-height:2;
-
-    }
-
-    .presentation .final-content{
-
-        width:calc(100% - 25px);
-
-        max-width:calc(100% - 25px);
-
-    }
-
-    .final-small{
-
-        letter-spacing:4px;
-
-        font-size:8px;
-
-    }
-
-    .age{
-
-        font-size:
-            clamp(125px,40vw,190px);
-
-        letter-spacing:-7px;
-
-    }
-
-    .happy{
-
-        margin-top:34px;
-
-    }
-
-    .name{
-
-        font-size:
-            clamp(42px,11vw,65px);
-
-    }
-
-    .wish-content{
-
-        width:calc(100% - 25px);
-
-        max-width:calc(100% - 25px);
-
-    }
-
-    .wish-title{
-
-        font-size:
-            clamp(27px,7vw,40px);
-
-        line-height:1.7;
-
-    }
-
-    .cake{
-
-        height:260px;
-
-    }
-
-    .cake-wrapper{
-
-        width:calc(100% - 20px);
-
-        max-width:520px;
-
-    }
-
-    .cake-heading{
-
-        font-size:
-            clamp(25px,7vw,40px);
-
-    }
-
-    .cake-subtitle{
-
-        padding:0 10px;
-
-    }
-
-    .cake-base{
-
-        width:280px;
-
-    }
-
-    .cake-layer{
-
-        width:285px;
-
-    }
-
-    .cake-cream{
-
-        width:272px;
-
-    }
-
-    .candle-row{
-
-        width:255px;
-
-        gap:4px;
-
-    }
-
-    .candle{
-
-        width:7px;
-
-        height:47px;
-
-    }
-
-    .candle:nth-child(2n){
-
-        height:54px;
-
-    }
-
-    .candle:nth-child(3n){
-
-        height:42px;
-
-    }
-
-    .message-content{
-
-        width:calc(100% - 20px);
-
-        max-width:680px;
-
-        padding:0 10px;
-
-    }
-
-    .message-small{
-
-        font-size:8px;
-
-        letter-spacing:4px;
-
-    }
-
-    .message-name{
-
-        font-size:
-            clamp(40px,10vw,65px);
-
-    }
-
-    .message-text{
-
-        font-size:
-            clamp(14px,4vw,18px);
-
-        line-height:2.15;
-
-        padding:0;
-
-    }
-
-    .celebration-content{
-
-        width:calc(100% - 20px);
-
-        max-width:720px;
-
-        padding:0 10px;
-
-    }
-
-    .celebration-small{
-
-        font-size:8px;
-
-        letter-spacing:4px;
-
-    }
-
-    .celebration h2{
-
-        font-size:
-            clamp(40px,11vw,70px);
-
-    }
-
-    .celebration p{
-
-        font-size:12px;
-
-        padding:0 8px;
-
-    }
-
-    .final-screen .final-content{
-
-        width:calc(100% - 20px);
-
-        max-width:720px;
-
-        padding:0 10px;
-
-    }
-
-    .final-content .small{
-
-        font-size:8px;
-
-        letter-spacing:4px;
-
-    }
-
-    .final-quote{
-
-        padding:
-            0 15px;
-
-        font-size:12px;
-
-    }
-
-    .ahmed-signature{
-
-        right:10px;
-
-        bottom:9px;
-
-        padding:6px 9px;
-
-        font-size:9px;
-
-        letter-spacing:1.5px;
-
-    }
-
-    .ahmed-light{
-
-        width:5px;
-        height:5px;
-
-    }
-
+    .light-ring{ width:310px; height:310px; }
+    .top-label{ top:26px; font-size:7px; letter-spacing:4px; }
+    .scene-text{ left:50%; width:calc(100% - 30px); max-width:calc(100% - 30px); padding:0; font-size:24px; line-height:2; }
+    .presentation .final-content{ width:calc(100% - 25px); max-width:calc(100% - 25px); }
+    .final-small{ letter-spacing:4px; font-size:8px; }
+    .age{ font-size: clamp(125px,40vw,190px); letter-spacing:-7px; }
+    .happy{ margin-top:34px; }
+    .name{ font-size: clamp(42px,11vw,65px); }
+    .wish-content{ width:calc(100% - 25px); max-width:calc(100% - 25px); }
+    .wish-title{ font-size: clamp(27px,7vw,40px); line-height:1.7; }
+    .cake{ height:260px; }
+    .cake-wrapper{ width:calc(100% - 20px); max-width:520px; }
+    .cake-heading{ font-size: clamp(25px,7vw,40px); }
+    .cake-subtitle{ padding:0 10px; }
+    .cake-base{ width:280px; }
+    .cake-layer{ width:285px; }
+    .cake-cream{ width:272px; }
+    .candle-row{ width:255px; gap:4px; }
+    .candle{ width:7px; height:47px; }
+    .candle:nth-child(2n){ height:54px; }
+    .candle:nth-child(3n){ height:42px; }
+    .message-content{ width:calc(100% - 20px); max-width:680px; padding:0 10px; }
+    .message-small{ font-size:8px; letter-spacing:4px; }
+    .message-name{ font-size: clamp(40px,10vw,65px); }
+    .message-text{ font-size: clamp(14px,4vw,18px); line-height:2.15; padding:0; }
+    .celebration-content{ width:calc(100% - 20px); max-width:720px; padding:0 10px; }
+    .celebration-small{ font-size:8px; letter-spacing:4px; }
+    .celebration h2{ font-size: clamp(40px,11vw,70px); }
+    .celebration p{ font-size:12px; padding:0 8px; }
+    .final-screen .final-content{ width:calc(100% - 20px); max-width:720px; padding:0 10px; }
+    .final-content .small{ font-size:8px; letter-spacing:4px; }
+    .final-quote{ padding: 0 15px; font-size:12px; }
+    .ahmed-signature{ right:10px; bottom:9px; padding:6px 9px; font-size:9px; letter-spacing:1.5px; }
+    .ahmed-light{ width:5px; height:5px; }
 }
-
-
-/* =====================================================
-   VERY SMALL PHONES
-===================================================== */
-
 @media(max-width:380px){
-
-    .scene-text{
-
-        font-size:21px;
-
-        line-height:1.9;
-
-    }
-
-    .welcome-eyebrow{
-
-        font-size:7px;
-
-        letter-spacing:5px;
-
-    }
-
-    .welcome-text{
-
-        font-size:11px;
-
-        padding:0 8px;
-
-    }
-
-    .glass-button{
-
-        width:220px;
-
-        height:56px;
-
-    }
-
-    .age{
-
-        font-size:125px;
-
-    }
-
-    .happy{
-
-        font-size:22px;
-
-        margin-top:30px;
-
-    }
-
-    .name{
-
-        font-size:42px;
-
-    }
-
-    .cake-heading{
-
-        font-size:24px;
-
-    }
-
-    .cake-subtitle{
-
-        font-size:9px;
-
-    }
-
-    .cake{
-
-        transform:scale(.88);
-
-        transform-origin:center top;
-
-        margin-bottom:-30px;
-
-    }
-
-    .message-text{
-
-        font-size:13px;
-
-        line-height:2;
-
-    }
-
+    .scene-text{ font-size:21px; line-height:1.9; }
+    .welcome-eyebrow{ font-size:7px; letter-spacing:5px; }
+    .welcome-text{ font-size:11px; padding:0 8px; }
+    .glass-button{ width:220px; height:56px; }
+    .age{ font-size:125px; }
+    .happy{ font-size:22px; margin-top:30px; }
+    .name{ font-size:42px; }
+    .cake-heading{ font-size:24px; }
+    .cake-subtitle{ font-size:9px; }
+    .cake{ transform:scale(.88); transform-origin:center top; margin-bottom:-30px; }
+    .message-text{ font-size:13px; line-height:2; }
 }
-
-
-/* =====================================================
-   LANDSCAPE MOBILE
-===================================================== */
-
 @media(max-height:500px) and (orientation:landscape){
-
-    .welcome-eyebrow{
-
-        margin-bottom:8px;
-
-    }
-
-    .welcome-title{
-
-        font-size:60px;
-
-    }
-
-    .welcome-line{
-
-        margin:10px auto;
-
-    }
-
-    .welcome-text{
-
-        font-size:10px;
-
-        line-height:1.6;
-
-    }
-
-    .glass-button{
-
-        margin-top:15px;
-
-        height:48px;
-
-    }
-
-    .top-label{
-
-        top:12px;
-
-    }
-
-    .scene-text{
-
-        font-size:22px;
-
-        line-height:1.5;
-
-    }
-
-    .presentation .final-content{
-
-        transform:
-            translate(-50%,-50%)
-            scale(.75);
-
-    }
-
-    .presentation .final-content.show{
-
-        transform:
-            translate(-50%,-50%)
-            scale(.75);
-
-    }
-
-    .cake-wrapper{
-
-        transform:scale(.72);
-
-        transform-origin:center;
-
-    }
-
-    .message-text{
-
-        font-size:12px;
-
-        line-height:1.7;
-
-        margin-top:10px;
-
-    }
-
-    .celebration h2{
-
-        font-size:40px;
-
-    }
-
+    .welcome-eyebrow{ margin-bottom:8px; }
+    .welcome-title{ font-size:60px; }
+    .welcome-line{ margin:10px auto; }
+    .welcome-text{ font-size:10px; line-height:1.6; }
+    .glass-button{ margin-top:15px; height:48px; }
+    .top-label{ top:12px; }
+    .scene-text{ font-size:22px; line-height:1.5; }
+    .presentation .final-content{ transform: translate(-50%,-50%) scale(.75); }
+    .presentation .final-content.show{ transform: translate(-50%,-50%) scale(.75); }
+    .cake-wrapper{ transform:scale(.72); transform-origin:center; }
+    .message-text{ font-size:12px; line-height:1.7; margin-top:10px; }
+    .celebration h2{ font-size:40px; }
 }
-
-
-/* =====================================================
-   REDUCED MOTION
-===================================================== */
-
 @media(prefers-reduced-motion:reduce){
-
-    *,
-    *::before,
-    *::after{
-
-        animation-duration:.01ms !important;
-
-        animation-iteration-count:1 !important;
-
-        transition-duration:.01ms !important;
-
-    }
-
+    *, *::before, *::after{ animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; }
 }
-
 </style>
 </head>
-
-
 <body>
-
 <div class="experience">
-
-
     <!-- AHMED SIGNATURE -->
-
     <div class="ahmed-signature">
         <span class="ahmed-light"></span>
         <span>AHMED</span>
     </div>
 
-
     <!-- AURORA -->
-
     <div class="aurora one"></div>
     <div class="aurora two"></div>
     <div class="aurora three"></div>
 
-
     <!-- LIGHT RING -->
-
     <div class="light-ring"></div>
 
-
     <!-- PARTICLES -->
-
-    <div
-        class="particles"
-        id="particles">
-    </div>
-
+    <div class="particles" id="particles"></div>
 
     <!-- TOUCH EFFECT -->
+    <div class="touch-glow" id="touchGlow"></div>
 
-    <div
-        class="touch-glow"
-        id="touchGlow">
-    </div>
-
-
-    <!-- =================================================
-         WELCOME
-    ================================================== -->
-
-    <section
-        class="welcome"
-        id="welcome">
-
-
+    <!-- WELCOME -->
+    <section class="welcome" id="welcome">
         <div class="welcome-content">
-
-
-            <div class="welcome-eyebrow">
-
-                A SPECIAL MOMENT
-
-            </div>
-
-
-            <h1 class="welcome-title">
-
-                فاطمه
-
-            </h1>
-
-
+            <div class="welcome-eyebrow">A SPECIAL MOMENT</div>
+            <h1 class="welcome-title">فطوم</h1>
             <div class="welcome-line"></div>
-
-
             <div class="welcome-text">
-
                 هناك لحظة صغيرة صنعت خصيصاً لكِ...<br>
-
                 خذي نفساً، واضغطي عندما تكونين مستعدة 🤍
-
             </div>
-
-
-            <button
-                class="glass-button"
-                id="enterButton">
-
-                لديكِ مفاجأة
-                &nbsp;&nbsp;
-                ←
-
+            <button class="glass-button" id="enterButton">
+                لديكِ مفاجأة &nbsp;&nbsp; ←
             </button>
-
-
         </div>
-
-
     </section>
 
-
-    <!-- =================================================
-         PRESENTATION
-    ================================================== -->
-
-    <section
-        class="presentation"
-        id="presentation">
-
-
-        <div class="top-label">
-
-            A SPECIAL DAY
-
-        </div>
-
-
-        <div
-            class="scene-text"
-            id="sceneText">
-        </div>
-
-
-        <div
-            class="final-content"
-            id="presentationFinal">
-
-
-            <div class="final-small">
-
-                TODAY IS ALL ABOUT YOU
-
-            </div>
-
-
-            <div class="age">
-
-                24
-
-            </div>
-
-
-            <div class="happy">
-
-                عيد ميلاد
-                <span>سعيد</span>
-
-            </div>
-
-
-            <div class="name">
-
-                فاطمه
-
-            </div>
-
-
+    <!-- PRESENTATION -->
+    <section class="presentation" id="presentation">
+        <div class="top-label">A SPECIAL DAY</div>
+        <div class="scene-text" id="sceneText"></div>
+        <div class="final-content" id="presentationFinal">
+            <div class="final-small">TODAY IS ALL ABOUT YOU</div>
+            <div class="age">22</div>
+            <div class="happy">عيد ميلاد <span>سعيد</span></div>
+            <div class="name">فطوم</div>
             <div class="final-line"></div>
-
-
             <div class="final-description">
-
                 سنة جديدة تبدأ اليوم...<br>
-
                 وأتمنى تكون أجمل من كل السنوات اللي مضت.
-
             </div>
-
-
         </div>
-
-
         <div class="progress">
-
-            <div
-                class="progress-bar"
-                id="progressBar">
-            </div>
-
+            <div class="progress-bar" id="progressBar"></div>
         </div>
-
-
     </section>
 
-
-    <!-- =================================================
-         WISH
-    ================================================== -->
-
-    <section
-        class="wish-screen"
-        id="wishScreen">
-
-
+    <!-- WISH -->
+    <section class="wish-screen" id="wishScreen">
         <div class="wish-content">
-
-
-            <div class="wish-icon">
-
-                ✨
-
-            </div>
-
-
+            <div class="wish-icon">✨</div>
             <div class="wish-title">
-
                 قبل ما تطفين الشموع...
                 <span>تمني أمنية 🤍</span>
-
             </div>
-
-
             <div class="wish-text">
-
                 خذي لحظة صغيرة لنفسج...<br>
-
-                وتمني الشي اللي تتمنينه من قلبج.
-
+                وتمني امنيه.
             </div>
-
-
-            <button
-                class="wish-button"
-                id="wishButton">
-
-                أنا جاهزة ✨
-
-            </button>
-
-
+            <button class="wish-button" id="wishButton"> جاهزة ✨</button>
         </div>
-
-
     </section>
 
-
-    <!-- =================================================
-         CAKE
-    ================================================== -->
-
-    <section
-        class="cake-screen"
-        id="cakeScreen">
-
-
+    <!-- CAKE -->
+    <section class="cake-screen" id="cakeScreen">
         <div class="cake-wrapper">
-
-
-            <div class="cake-heading">
-
-                الآن...
-                <span>انفخي الشموع 🤍</span>
-
-            </div>
-
-
+            <div class="cake-heading">الآن... <span>انفخي الشموع 🤍</span></div>
             <div class="cake-subtitle">
-
-                اسمحي للمايكروفون ثم انفخي باتجاه الهاتف.<br>
-
-                وإذا ما اشتغل المايك، يمكنكِ لمس الشموع لإطفائها.
-
+                اسمحي للمايكروفون ثم انفخي ع مبايل.<br>
+                وإذا ما اشتغل المايك، تكدرين تلمسين الشموع لإطفائها.
             </div>
-
-
             <div class="cake">
-
-
                 <div class="plate"></div>
-
-
                 <div class="cake-base"></div>
-
-
                 <div class="cake-layer"></div>
-
-
                 <div class="cake-cream"></div>
-
-
-                <div
-                    class="candle-row"
-                    id="candleRow">
-                </div>
-
-
+                <div class="candle-row" id="candleRow"></div>
             </div>
-
-
             <div class="blow-area">
-
-
-                <div class="blow-label">
-
-                    BLOW POWER
-
-                </div>
-
-
-                <div class="meter">
-
-                    <div
-                        class="meter-fill"
-                        id="meterFill">
-                    </div>
-
-                </div>
-
-
+                <div class="blow-label">BLOW POWER</div>
+                <div class="meter"><div class="meter-fill" id="meterFill"></div></div>
             </div>
-
-
-            <div
-                class="mic-status"
-                id="micStatus">
-
-                اضغطي «ابدئي النفخ» 🎤
-
-            </div>
-
-
-            <button
-                class="mic-button"
-                id="micButton">
-
-                ابدئي النفخ
-
-            </button>
-
-
+            <div class="mic-status" id="micStatus">اضغطي «ابدئي النفخ» 🎤</div>
+            <button class="mic-button" id="micButton">ابدئي النفخ</button>
         </div>
-
-
     </section>
 
-
-    <!-- =================================================
-         MESSAGE
-    ================================================== -->
-
-    <section
-        class="message-screen"
-        id="messageScreen">
-
-
+    <!-- MESSAGE -->
+    <section class="message-screen" id="messageScreen">
         <div class="message-content">
-
-
-            <div class="message-small">
-
-                A LITTLE MESSAGE FOR YOU
-
-            </div>
-
-
-            <div
-                class="message-name">
-
-                فاطمه
-
-            </div>
-
-
-            <div
-                class="message-text"
-                id="messageText">
-
-            </div>
-
-
+            <div class="message-small">A LITTLE MESSAGE FOR YOU</div>
+            <div class="message-name">حلوتي</div>
+            <div class="message-text" id="messageText"></div>
         </div>
-
-
     </section>
 
-
-    <!-- =================================================
-         CELEBRATION
-    ================================================== -->
-
-    <section
-        class="celebration"
-        id="celebration">
-
-
-        <div
-            class="confetti"
-            id="confetti">
-        </div>
-
-
+    <!-- CELEBRATION -->
+    <section class="celebration" id="celebration">
+        <div class="confetti" id="confetti"></div>
         <div class="celebration-content">
-
-
-            <div class="celebration-small">
-
-                THE SURPRISE BEGINS
-
-            </div>
-
-
-            <h2>
-
-                اليوم يومك
-
-                <br>
-
-                <span>
-                    فاطمه 🤍
-                </span>
-
-            </h2>
-
-
+            <div class="celebration-small">THE SURPRISE BEGINS</div>
+            <h2>اليوم يومك <br><span>فطوم 🤍</span></h2>
             <p>
-
                 كل لحظة حلوة تستحق أن تنحفظ،
                 وكل سنة جديدة تستحق بداية أجمل.
                 وهذه... مجرد البداية.
-
             </p>
-
-
-            <button
-                class="again-button"
-                id="celebrateButton">
-
-                كملي المفاجأة ✨
-
-            </button>
-
-
+            <button class="again-button" id="celebrateButton">كملي المفاجأة ✨</button>
         </div>
-
-
     </section>
 
-
-    <!-- =================================================
-         FINAL
-    ================================================== -->
-
-    <section
-        class="final-screen"
-        id="finalScreen">
-
-
+    <!-- FINAL -->
+    <section class="final-screen" id="finalScreen">
         <div class="final-point"></div>
-
-
         <div class="final-content">
-
-
-            <div class="small">
-
-                FOR YOU, FATIMA
-
-            </div>
-
-
-            <h1>
-
-                فاطمه
-
-            </h1>
-
-
-            <div class="final-age">
-
-                24
-
-            </div>
-
-
+            <div class="small">FOR YOU, FATIMA</div>
+            <h1>فطوم</h1>
+            <div class="final-age">22</div>
             <div class="final-quote">
-
                 سنة جديدة من عمرج...<br>
-
-                أتمنى تكون مليانة ضحكات،
-                لحظات جميلة،
-                وأشياء تخلي قلبج سعيد 🤍
-
+                أتمنى تكون مليانة ضحكات، لحظات جميلة، وأشياء تخلي قلبج سعيد 🤍
             </div>
-
-
-            <button
-                class="restart"
-                id="restart">
-
-                إعادة اللحظة ↻
-
-            </button>
-
-
+            <button class="restart" id="restart">إعادة اللحظة ↻</button>
         </div>
-
-
     </section>
-
 
     <!-- REVEAL -->
-
-    <div
-        class="reveal"
-        id="reveal">
-    </div>
-
-
+    <div class="reveal" id="reveal"></div>
 </div>
 
-
 <script>
+/* ELEMENTS */
+const welcome = document.getElementById("welcome");
+const presentation = document.getElementById("presentation");
+const sceneText = document.getElementById("sceneText");
+const presentationFinal = document.getElementById("presentationFinal");
+const progressBar = document.getElementById("progressBar");
+const wishScreen = document.getElementById("wishScreen");
+const cakeScreen = document.getElementById("cakeScreen");
+const messageScreen = document.getElementById("messageScreen");
+const celebration = document.getElementById("celebration");
+const finalScreen = document.getElementById("finalScreen");
+const reveal = document.getElementById("reveal");
+const candleRow = document.getElementById("candleRow");
+const micStatus = document.getElementById("micStatus");
+const meterFill = document.getElementById("meterFill");
+const touchGlow = document.getElementById("touchGlow");
 
-
-/* =====================================================
-   ELEMENTS
-===================================================== */
-
-const welcome =
-    document.getElementById("welcome");
-
-const presentation =
-    document.getElementById("presentation");
-
-const sceneText =
-    document.getElementById("sceneText");
-
-const presentationFinal =
-    document.getElementById("presentationFinal");
-
-const progressBar =
-    document.getElementById("progressBar");
-
-const wishScreen =
-    document.getElementById("wishScreen");
-
-const cakeScreen =
-    document.getElementById("cakeScreen");
-
-const messageScreen =
-    document.getElementById("messageScreen");
-
-const celebration =
-    document.getElementById("celebration");
-
-const finalScreen =
-    document.getElementById("finalScreen");
-
-const reveal =
-    document.getElementById("reveal");
-
-const candleRow =
-    document.getElementById("candleRow");
-
-const micStatus =
-    document.getElementById("micStatus");
-
-const meterFill =
-    document.getElementById("meterFill");
-
-const touchGlow =
-    document.getElementById("touchGlow");
-
-
-/* =====================================================
-   PARTICLES
-===================================================== */
-
-const particles =
-    document.getElementById("particles");
-
-
+/* PARTICLES */
+const particles = document.getElementById("particles");
 for(let i=0;i<55;i++){
-
-    const p =
-        document.createElement("div");
-
+    const p = document.createElement("div");
     p.className="particle";
-
-
-    const size =
-        1 + Math.random()*3.5;
-
-
-    p.style.width =
-        size+"px";
-
-    p.style.height =
-        size+"px";
-
-
-    p.style.left =
-        Math.random()*100+"%";
-
-
-    p.style.setProperty(
-        "--moveX",
-        ((Math.random()-.5)*180)+"px"
-    );
-
-
-    p.style.animationDuration =
-        (7+Math.random()*13)+"s";
-
-
-    p.style.animationDelay =
-        (Math.random()*12)+"s";
-
-
+    const size = 1 + Math.random()*3.5;
+    p.style.width = size+"px";
+    p.style.height = size+"px";
+    p.style.left = Math.random()*100+"%";
+    p.style.setProperty("--moveX", ((Math.random()-.5)*180)+"px");
+    p.style.animationDuration = (7+Math.random()*13)+"s";
+    p.style.animationDelay = (Math.random()*12)+"s";
     particles.appendChild(p);
-
 }
 
+/* TOUCH LIGHT */
+document.addEventListener("pointerdown", function(e){
+    touchGlow.style.left = e.clientX+"px";
+    touchGlow.style.top = e.clientY+"px";
+    touchGlow.classList.remove("active");
+    void touchGlow.offsetWidth;
+    touchGlow.classList.add("active");
+}, { passive:true });
 
-/* =====================================================
-   TOUCH LIGHT
-===================================================== */
+/* PARALLAX LIGHT */
+document.addEventListener("pointermove", function(e){
+    const x = e.clientX / window.innerWidth - .5;
+    const y = e.clientY / window.innerHeight - .5;
+    document.querySelector(".aurora.one").style.marginLeft = (x*-35)+"px";
+    document.querySelector(".aurora.one").style.marginTop = (y*-35)+"px";
+    document.querySelector(".aurora.two").style.marginLeft = (x*35)+"px";
+    document.querySelector(".aurora.two").style.marginTop = (y*35)+"px";
+}, { passive:true });
 
-document.addEventListener(
-    "pointerdown",
-    function(e){
-
-        touchGlow.style.left =
-            e.clientX+"px";
-
-        touchGlow.style.top =
-            e.clientY+"px";
-
-        touchGlow.classList.remove("active");
-
-        void touchGlow.offsetWidth;
-
-        touchGlow.classList.add("active");
-
-    },
-    {
-        passive:true
-    }
-);
-
-
-/* =====================================================
-   PARALLAX LIGHT
-===================================================== */
-
-document.addEventListener(
-    "pointermove",
-    function(e){
-
-        const x =
-            e.clientX /
-            window.innerWidth -
-            .5;
-
-        const y =
-            e.clientY /
-            window.innerHeight -
-            .5;
-
-
-        document
-            .querySelector(".aurora.one")
-            .style.marginLeft =
-            (x*-35)+"px";
-
-
-        document
-            .querySelector(".aurora.one")
-            .style.marginTop =
-            (y*-35)+"px";
-
-
-        document
-            .querySelector(".aurora.two")
-            .style.marginLeft =
-            (x*35)+"px";
-
-
-        document
-            .querySelector(".aurora.two")
-            .style.marginTop =
-            (y*35)+"px";
-
-    },
-    {
-        passive:true
-    }
-);
-
-
-/* =====================================================
-   PRESENTATION
-===================================================== */
-
+/* PRESENTATION SCENES */
 const scenes = [
-
     "اليوم مو مثل<br>أي يوم...",
-
     "لأن اليوم<br><strong>شخص مميز</strong> يحتفل بيومه.",
-
     "سنة جديدة تبدأ<br>من هذه اللحظة...",
-
     "ويمكن أجمل شيء فيها<br>إنها <strong>بدايتها اليوم.</strong>"
-
 ];
-
-
 let sceneIndex=0;
-
 let sceneTimer=null;
 
-
 function showScene(){
-
     sceneText.classList.remove("show");
-
-
     setTimeout(function(){
-
-        sceneText.innerHTML =
-            scenes[sceneIndex];
-
-
+        sceneText.innerHTML = scenes[sceneIndex];
         sceneText.classList.add("show");
-
-
-        progressBar.style.width =
-            (
-                (sceneIndex+1) /
-                scenes.length *
-                100
-            )+"%";
-
-
+        progressBar.style.width = ((sceneIndex+1) / scenes.length * 100) + "%";
     },400);
-
 }
 
-
-/* =====================================================
-   ENTER
-===================================================== */
-
-document
-    .getElementById("enterButton")
-    .addEventListener(
-        "click",
-        function(){
-
-            welcome.classList.add("hide");
-
-
-            setTimeout(
-                startPresentation,
-                900
-            );
-
-        }
-    );
-
-
-/* =====================================================
-   START PRESENTATION
-===================================================== */
+document.getElementById("enterButton").addEventListener("click", function(){
+    welcome.classList.add("hide");
+    setTimeout(startPresentation, 900);
+});
 
 function startPresentation(){
-
     presentation.classList.add("show");
-
     sceneIndex=0;
-
     showScene();
-
-
     clearInterval(sceneTimer);
-
-
-    sceneTimer =
-        setInterval(
-            function(){
-
-                sceneIndex++;
-
-
-                if(sceneIndex < scenes.length){
-
-                    showScene();
-
-                }
-
-                else{
-
-                    clearInterval(sceneTimer);
-
-
-                    setTimeout(
-                        showPresentationFinal,
-                        900
-                    );
-
-                }
-
-            },
-            3200
-        );
-
+    sceneTimer = setInterval(function(){
+        sceneIndex++;
+        if(sceneIndex < scenes.length){
+            showScene();
+        } else {
+            clearInterval(sceneTimer);
+            setTimeout(showPresentationFinal, 900);
+        }
+    }, 3200);
 }
-
-
-/* =====================================================
-   PRESENTATION FINAL
-===================================================== */
 
 function showPresentationFinal(){
-
     sceneText.classList.remove("show");
-
-
-    setTimeout(
-        function(){
-
-            presentationFinal
-                .classList.add("show");
-
-
-            setTimeout(
-                function(){
-
-                    presentation.classList.remove("show");
-
-
-                    setTimeout(
-                        function(){
-
-                            wishScreen
-                                .classList.add("show");
-
-                        },
-                        700
-                    );
-
-                },
-                3500
-            );
-
-        },
-        700
-    );
-
+    setTimeout(function(){
+        presentationFinal.classList.add("show");
+        setTimeout(function(){
+            presentation.classList.remove("show");
+            setTimeout(function(){
+                wishScreen.classList.add("show");
+            }, 700);
+        }, 3500);
+    }, 700);
 }
 
+document.getElementById("wishButton").addEventListener("click", function(){
+    wishScreen.classList.remove("show");
+    setTimeout(function(){
+        cakeScreen.classList.add("show");
+        createCandles();
+    }, 700);
+});
 
-/* =====================================================
-   WISH
-===================================================== */
-
-document
-    .getElementById("wishButton")
-    .addEventListener(
-        "click",
-        function(){
-
-            wishScreen.classList.remove("show");
-
-
-            setTimeout(
-                function(){
-
-                    cakeScreen.classList.add("show");
-
-                    createCandles();
-
-                },
-                700
-            );
-
-        }
-    );
-
-
-/* =====================================================
-   CREATE 24 CANDLES
-===================================================== */
-
+/* CREATE CANDLES WITH FLICKER OFFSET */
 function createCandles(){
-
     candleRow.innerHTML="";
-
-
     for(let i=0;i<24;i++){
-
-        const candle =
-            document.createElement("div");
-
-
+        const candle = document.createElement("div");
         candle.className="candle";
+        candle.innerHTML = `<div class="flame"></div><div class="smoke"></div>`;
+        
+        // Randomize flame flicker timing for realism
+        const flame = candle.querySelector(".flame");
+        if(flame) {
+            flame.style.animationDelay = (Math.random() * 0.5) + "s";
+        }
 
-
-        candle.innerHTML =
-            `
-            <div class="flame"></div>
-            <div class="smoke"></div>
-            `;
-
-
-        candle.addEventListener(
-            "click",
-            function(){
-
-                if(
-                    !candle.classList.contains(
-                        "off"
-                    )
-                ){
-
-                    extinguishCandle(
-                        candle
-                    );
-
-                }
-
+        candle.addEventListener("click", function(){
+            if(!candle.classList.contains("off")){
+                extinguishCandle(candle);
             }
-        );
-
-
-        candleRow.appendChild(
-            candle
-        );
-
+        });
+        candleRow.appendChild(candle);
     }
-
 }
-
-
-/* =====================================================
-   EXTINGUISH CANDLE
-===================================================== */
 
 function extinguishCandle(candle){
-
     candle.classList.add("off");
-
-
     checkAllCandles();
-
 }
-
-
-/* =====================================================
-   CHECK CANDLES
-===================================================== */
 
 function checkAllCandles(){
-
-    const candles =
-        document.querySelectorAll(
-            ".candle"
-        );
-
-
-    const off =
-        document.querySelectorAll(
-            ".candle.off"
-        );
-
-
+    const candles = document.querySelectorAll(".candle");
+    const off = document.querySelectorAll(".candle.off");
     if(off.length >= candles.length){
-
-        setTimeout(
-            finishCandles,
-            1000
-        );
-
+        setTimeout(finishCandles, 1000);
     }
-
 }
 
-
-/* =====================================================
-   MICROPHONE
-===================================================== */
-
+/* MICROPHONE CONTROL & SAFARI FIX */
 let audioContext=null;
-
 let analyser=null;
-
 let microphoneStream=null;
-
 let microphoneRunning=false;
-
 let lastBlow=0;
 
-
-document
-    .getElementById("micButton")
-    .addEventListener(
-        "click",
-        startMicrophone
-    );
-
+document.getElementById("micButton").addEventListener("click", startMicrophone);
 
 async function startMicrophone(){
-
-    if(microphoneRunning){
-
-        return;
-
-    }
-
-
-    if(
-        !navigator.mediaDevices ||
-        !navigator.mediaDevices.getUserMedia
-    ){
-
+    if(microphoneRunning) return;
+    if(!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia){
         manualMode();
-
         return;
-
     }
-
-
     try{
-
-        microphoneStream =
-            await navigator.mediaDevices
-                .getUserMedia({
-                    audio:{
-                        echoCancellation:false,
-                        noiseSuppression:false,
-                        autoGainControl:false
-                    }
-                });
-
-
-        audioContext =
-            new (
-                window.AudioContext ||
-                window.webkitAudioContext
-            )();
-
-
-        analyser =
-            audioContext.createAnalyser();
-
-
-        /*
-           رفع جودة قراءة النفخة
-        */
-
-        analyser.fftSize=1024;
-
-        analyser.smoothingTimeConstant=0.08;
-
-
-        const source =
-            audioContext
-                .createMediaStreamSource(
-                    microphoneStream
-                );
-
-
-        source.connect(analyser);
-
-
-        microphoneRunning=true;
-
-
-        micStatus.textContent =
-            "انفخي الآن... 🎤💨";
-
-
-        micStatus.classList.add(
-            "ready"
-        );
-
-
-        document
-            .getElementById("micButton")
-            .style.display="none";
-
-
-        listenToBlow();
-
-    }
-
-    catch(error){
-
-        manualMode();
-
-    }
-
-}
-
-
-/* =====================================================
-   MANUAL MODE
-===================================================== */
-
-function manualMode(){
-
-    micStatus.textContent =
-        "الميكروفون غير متاح، المسِي الشموع لإطفائها 🤍";
-
-
-    micStatus.classList.remove(
-        "ready"
-    );
-
-
-    document
-        .getElementById("micButton")
-        .style.display="none";
-
-}
-
-
-/* =====================================================
-   LISTEN TO BLOW
-===================================================== */
-
-function listenToBlow(){
-
-    if(!microphoneRunning){
-
-        return;
-
-    }
-
-
-    const data =
-        new Uint8Array(
-            analyser.fftSize
-        );
-
-
-    analyser.getByteTimeDomainData(
-        data
-    );
-
-
-    let sum=0;
-
-
-    for(
-        let i=0;
-        i<data.length;
-        i++
-    ){
-
-        const normalized =
-            (data[i]-128)/128;
-
-
-        sum +=
-            normalized *
-            normalized;
-
-    }
-
-
-    const rms =
-        Math.sqrt(
-            sum /
-            data.length
-        );
-
-
-    /*
-       حساسية النفخ أعلى من قبل
-
-       القديم:
-       rms * 1000
-
-       الجديد:
-       rms * 1600
-    */
-
-    const power =
-        Math.min(
-            100,
-            rms*1600
-        );
-
-
-    meterFill.style.width =
-        power+"%";
-
-
-    /*
-       الحد الجديد للنفخة:
-
-       القديم:
-       0.075
-
-       الجديد:
-       0.045
-
-       يعني النفخة أخف بكثير تكفي.
-    */
-
-    if(
-        rms>.045 &&
-        performance.now()-lastBlow>400
-    ){
-
-        lastBlow =
-            performance.now();
-
-
-        blowCandle();
-
-    }
-
-
-    requestAnimationFrame(
-        listenToBlow
-    );
-
-}
-
-
-/* =====================================================
-   BLOW ONE OR MORE CANDLES
-===================================================== */
-
-function blowCandle(){
-
-    const active =
-        [
-            ...document.querySelectorAll(
-                ".candle:not(.off)"
-            )
-        ];
-
-
-    if(!active.length){
-
-        return;
-
-    }
-
-
-    let count=1;
-
-
-    const power =
-        parseFloat(
-            meterFill.style.width
-                || "0"
-        );
-
-
-    /*
-       نفخة خفيفة = 1
-       نفخة متوسطة = 2
-       نفخة قوية = 3
-    */
-
-    if(power>60){
-
-        count=3;
-
-    }
-
-    else if(power>38){
-
-        count=2;
-
-    }
-
-
-    for(
-        let i=0;
-        i<count;
-        i++
-    ){
-
-        const remaining =
-            [
-                ...document.querySelectorAll(
-                    ".candle:not(.off)"
-                )
-            ];
-
-
-        if(!remaining.length){
-
-            break;
-
+        microphoneStream = await navigator.mediaDevices.getUserMedia({
+            audio:{ echoCancellation:false, noiseSuppression:false, autoGainControl:false }
+        });
+        audioContext = new (window.AudioContext || window.webkitAudioContext)();
+        
+        // Resume AudioContext for iOS Safari
+        if (audioContext.state === 'suspended') {
+            await audioContext.resume();
         }
 
-
-        const random =
-            remaining[
-                Math.floor(
-                    Math.random() *
-                    remaining.length
-                )
-            ];
-
-
-        extinguishCandle(
-            random
-        );
-
+        analyser = audioContext.createAnalyser();
+        analyser.fftSize=1024;
+        analyser.smoothingTimeConstant=0.08;
+        const source = audioContext.createMediaStreamSource(microphoneStream);
+        source.connect(analyser);
+        
+        microphoneRunning=true;
+        micStatus.textContent = "انفخي الآن... 🎤💨";
+        micStatus.classList.add("ready");
+        document.getElementById("micButton").style.display="none";
+        listenToBlow();
+    } catch(error){
+        manualMode();
     }
-
 }
 
+function manualMode(){
+    micStatus.textContent = "الميكروفون غير متاح، المسِي الشموع لإطفائها 🤍";
+    micStatus.classList.remove("ready");
+    document.getElementById("micButton").style.display="none";
+}
 
-/* =====================================================
-   FINISH CANDLES
-===================================================== */
+function listenToBlow(){
+    if(!microphoneRunning) return;
+    const data = new Uint8Array(analyser.fftSize);
+    analyser.getByteTimeDomainData(data);
+    
+    let sum=0;
+    for(let i=0; i<data.length; i++){
+        const normalized = (data[i]-128)/128;
+        sum += normalized * normalized;
+    }
+    const rms = Math.sqrt(sum / data.length);
+    const power = Math.min(100, rms*1600);
+    meterFill.style.width = power+"%";
+
+    if(rms > .045 && performance.now()-lastBlow > 400){
+        lastBlow = performance.now();
+        blowCandle();
+    }
+    requestAnimationFrame(listenToBlow);
+}
+
+function blowCandle(){
+    const active = [...document.querySelectorAll(".candle:not(.off)")];
+    if(!active.length) return;
+    
+    let count=1;
+    const power = parseFloat(meterFill.style.width || "0");
+    if(power>60) count=3;
+    else if(power>38) count=2;
+
+    for(let i=0; i<count; i++){
+        const remaining = [...document.querySelectorAll(".candle:not(.off)")];
+        if(!remaining.length) break;
+        const random = remaining[Math.floor(Math.random() * remaining.length)];
+        extinguishCandle(random);
+    }
+}
 
 function finishCandles(){
-
     microphoneRunning=false;
-
-
     if(microphoneStream){
-
-        microphoneStream
-            .getTracks()
-            .forEach(
-                track =>
-                    track.stop()
-            );
-
+        microphoneStream.getTracks().forEach(track => track.stop());
     }
-
-
-    if(audioContext){
-
-        audioContext
-            .close()
-            .catch(
-                ()=>{}
-            );
-
+    if(audioContext && audioContext.state !== 'closed'){
+        audioContext.close().catch(()=>{});
     }
-
-
-    micStatus.textContent =
-        "أمنيتج وصلت 🤍";
-
-
-    setTimeout(
-        showMessage,
-        1200
-    );
-
+    micStatus.textContent = "أمنيتج وصلت 🤍";
+    setTimeout(showMessage, 1200);
 }
 
-
-/* =====================================================
-   MESSAGE
-===================================================== */
-
-const personalMessage =
-`
-فاطمه... 🤍
-
+/* PERSONAL MESSAGE WITH SKIP TYPING OPTION */
+const personalMessage = `
+فطوم... 🤍
 اليوم مو مجرد تاريخ يمر بالسنة.
-
 اليوم بداية سنة جديدة من عمرج،
 وأتمنى تكون أخف،
 وأجمل،
 ومليانة لحظات تستحق الابتسامة.
-
 كل سنة وإنتِ بخير،
-وكل سنة وإنتِ أجمل من السنة اللي قبلها.
+وكل سنة وإنتِ أجمل من السنة اللي قبلها احبج.
 `;
 
+let typingTimeout = null;
+let isTyping = false;
 
 function showMessage(){
-
-    cakeScreen.classList.remove(
-        "show"
-    );
-
-
-    messageScreen.classList.add(
-        "show"
-    );
-
-
+    cakeScreen.classList.remove("show");
+    messageScreen.classList.add("show");
     typeMessage();
-
 }
-
-
-/* =====================================================
-   TYPE MESSAGE
-===================================================== */
 
 function typeMessage(){
-
-    const target =
-        document.getElementById(
-            "messageText"
-        );
-
-
+    const target = document.getElementById("messageText");
     target.innerHTML="";
-
-
     let i=0;
-
-
-    const cursor =
-        document.createElement("span");
-
-
-    cursor.className=
-        "typing-cursor";
-
+    isTyping = true;
+    const cursor = document.createElement("span");
+    cursor.className = "typing-cursor";
 
     function type(){
-
         if(i < personalMessage.length){
-
-            const char =
-                personalMessage[i];
-
-
-            if(char === "\n"){
-
-                target.innerHTML +=
-                    "<br>";
-
-            }
-
-            else{
-
-                target.innerHTML +=
-                    char;
-
-            }
-
-
+            const char = personalMessage[i];
+            if(char === "\n") target.innerHTML += "<br>";
+            else target.innerHTML += char;
             i++;
-
-
-            setTimeout(
-                type,
-                35
-            );
-
+            typingTimeout = setTimeout(type, 35);
+        } else {
+            isTyping = false;
+            target.appendChild(cursor);
+            setTimeout(showCelebration, 1800);
         }
-
-        else{
-
-            target.appendChild(
-                cursor
-            );
-
-
-            setTimeout(
-                showCelebration,
-                1800
-            );
-
-        }
-
     }
-
-
     type();
-
 }
 
+// Click anywhere on message screen to skip typing animation
+messageScreen.addEventListener("click", function(){
+    if (isTyping) {
+        clearTimeout(typingTimeout);
+        isTyping = false;
+        const target = document.getElementById("messageText");
+        target.innerHTML = personalMessage.trim().replace(/\n/g, "<br>");
+        const cursor = document.createElement("span");
+        cursor.className = "typing-cursor";
+        target.appendChild(cursor);
+        setTimeout(showCelebration, 1800);
+    }
+});
 
-/* =====================================================
-   CELEBRATION
-===================================================== */
-
+/* CELEBRATION & COLORFUL CONFETTI */
 function showCelebration(){
-
-    messageScreen.classList.remove(
-        "show"
-    );
-
-
-    celebration.classList.add(
-        "show"
-    );
-
-
+    messageScreen.classList.remove("show");
+    celebration.classList.add("show");
     createConfetti();
-
 }
-
-
-/* =====================================================
-   CONFETTI
-===================================================== */
 
 function createConfetti(){
-
-    const box =
-        document.getElementById(
-            "confetti"
-        );
-
-
+    const box = document.getElementById("confetti");
     box.innerHTML="";
-
-
-    for(
-        let i=0;
-        i<100;
-        i++
-    ){
-
-        const piece =
-            document.createElement("i");
-
-
-        piece.style.left =
-            Math.random()*100+"%";
-
-
-        piece.style.setProperty(
-            "--x",
-            (
-                Math.random()*260-130
-            )+"px"
-        );
-
-
-        piece.style.animationDelay =
-            Math.random()*1.5+"s";
-
-
-        piece.style.transform =
-            "rotate("+
-            Math.random()*180+
-            "deg)";
-
-
-        box.appendChild(
-            piece
-        );
-
+    const colors = ['#efb284', '#eab07f', '#b56bff', '#ff8649', '#ffd9b8', '#ffffff'];
+    
+    for(let i=0; i<100; i++){
+        const piece = document.createElement("i");
+        piece.style.left = Math.random()*100+"%";
+        piece.style.background = colors[Math.floor(Math.random() * colors.length)];
+        piece.style.setProperty("--x", (Math.random()*260-130)+"px");
+        piece.style.animationDelay = Math.random()*1.5+"s";
+        piece.style.transform = "rotate("+ Math.random()*180 +"deg)";
+        box.appendChild(piece);
     }
-
 }
 
+document.getElementById("celebrateButton").addEventListener("click", function(){
+    celebration.classList.remove("show");
+    reveal.classList.add("go");
+    setTimeout(function(){
+        finalScreen.classList.add("show");
+    }, 650);
+});
 
-/* =====================================================
-   GO FINAL
-===================================================== */
-
-document
-    .getElementById("celebrateButton")
-    .addEventListener(
-        "click",
-        function(){
-
-            celebration.classList.remove(
-                "show"
-            );
-
-
-            reveal.classList.add(
-                "go"
-            );
-
-
-            setTimeout(
-                function(){
-
-                    finalScreen.classList.add(
-                        "show"
-                    );
-
-                },
-                650
-            );
-
-        }
-    );
-
-
-/* =====================================================
-   RESTART
-===================================================== */
-
-document
-    .getElementById("restart")
-    .addEventListener(
-        "click",
-        function(){
-
-            finalScreen.classList.remove(
-                "show"
-            );
-
-
-            celebration.classList.remove(
-                "show"
-            );
-
-
-            messageScreen.classList.remove(
-                "show"
-            );
-
-
-            cakeScreen.classList.remove(
-                "show"
-            );
-
-
-            wishScreen.classList.remove(
-                "show"
-            );
-
-
-            presentation.classList.remove(
-                "show"
-            );
-
-
-            presentationFinal
-                .classList.remove(
-                    "show"
-                );
-
-
-            sceneText.classList.remove(
-                "show"
-            );
-
-
-            progressBar.style.width="0%";
-
-
-            reveal.classList.remove(
-                "go"
-            );
-
-
-            document
-                .getElementById("micButton")
-                .style.display="";
-
-
-            micStatus.classList.remove(
-                "ready"
-            );
-
-
-            micStatus.textContent =
-                "اضغطي «ابدئي النفخ» 🎤";
-
-
-            meterFill.style.width="0%";
-
-
-            setTimeout(
-                function(){
-
-                    welcome.classList.remove(
-                        "hide"
-                    );
-
-                },
-                500
-            );
-
-        }
-    );
-
-
-/* =====================================================
-   CLEAN REVEAL CLASS
-===================================================== */
-
-reveal.addEventListener(
-    "animationend",
-    function(){
-
-        reveal.classList.remove(
-            "go"
-        );
-
+/* RESTART & CLEANUP */
+document.getElementById("restart").addEventListener("click", function(){
+    // Stop microphone & AudioContext cleanup
+    microphoneRunning = false;
+    if (microphoneStream) {
+        microphoneStream.getTracks().forEach(track => track.stop());
+        microphoneStream = null;
     }
-);
+    if (audioContext && audioContext.state !== 'closed') {
+        audioContext.close().catch(() => {});
+        audioContext = null;
+    }
 
+    finalScreen.classList.remove("show");
+    celebration.classList.remove("show");
+    messageScreen.classList.remove("show");
+    cakeScreen.classList.remove("show");
+    wishScreen.classList.remove("show");
+    presentation.classList.remove("show");
+    presentationFinal.classList.remove("show");
+    sceneText.classList.remove("show");
+    progressBar.style.width="0%";
+    reveal.classList.remove("go");
+    
+    document.getElementById("micButton").style.display="";
+    micStatus.classList.remove("ready");
+    micStatus.textContent = "اضغطي «انفخي» 🎤";
+    meterFill.style.width="0%";
+    
+    setTimeout(function(){
+        welcome.classList.remove("hide");
+    }, 500);
+});
+
+reveal.addEventListener("animationend", function(){
+    reveal.classList.remove("go");
+});
 </script>
-
 </body>
 </html>
