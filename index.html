@@ -100,7 +100,7 @@ button{
 
 /* =====================================================
    GLOBAL CENTER FIX
-   ===================================================== */
+===================================================== */
 
 .welcome,
 .presentation,
@@ -316,7 +316,7 @@ button{
 
         transform:
             translate(-50%,-50%)
-            scale:.8;
+            scale(.8);
 
     }
 
@@ -556,6 +556,159 @@ button{
         transform:
             translate(-50%,-50%)
             scale(7);
+    }
+
+}
+
+
+/* =====================================================
+   AHMED SIGNATURE
+===================================================== */
+
+.ahmed-signature{
+
+    position:fixed;
+
+    right:16px;
+    bottom:14px;
+
+    z-index:100;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:7px;
+
+    direction:ltr;
+
+    padding:7px 11px;
+
+    border-radius:50px;
+
+    background:
+        rgba(10,7,13,.42);
+
+    border:
+        1px solid
+        rgba(255,210,170,.10);
+
+    backdrop-filter:blur(12px);
+
+    -webkit-backdrop-filter:blur(12px);
+
+    color:
+        rgba(255,255,255,.48);
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size:11px;
+
+    letter-spacing:2px;
+
+    pointer-events:none;
+
+    box-shadow:
+
+        0 0 18px
+        rgba(255,150,100,.06),
+
+        inset 0 0 12px
+        rgba(255,255,255,.025);
+
+    animation:
+        ahmedFloat 3s ease-in-out infinite;
+
+}
+
+
+.ahmed-light{
+
+    position:relative;
+
+    width:6px;
+    height:6px;
+
+    border-radius:50%;
+
+    background:#ffd9b8;
+
+    box-shadow:
+
+        0 0 5px #ffd9b8,
+
+        0 0 12px
+        rgba(255,170,110,.9),
+
+        0 0 22px
+        rgba(255,120,70,.45);
+
+    animation:
+        ahmedLight 1.5s ease-in-out infinite;
+
+}
+
+
+.ahmed-light::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-5px;
+
+    border-radius:50%;
+
+    border:
+        1px solid
+        rgba(255,180,120,.12);
+
+    animation:
+        ahmedPulse 1.5s ease-in-out infinite;
+
+}
+
+
+@keyframes ahmedLight{
+
+    0%,100%{
+        opacity:.55;
+        transform:scale(.8);
+    }
+
+    50%{
+        opacity:1;
+        transform:scale(1.25);
+    }
+
+}
+
+
+@keyframes ahmedPulse{
+
+    0%,100%{
+        transform:scale(.7);
+        opacity:0;
+    }
+
+    50%{
+        transform:scale(1.4);
+        opacity:.8;
+    }
+
+}
+
+
+@keyframes ahmedFloat{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-2px);
     }
 
 }
@@ -3067,6 +3220,27 @@ button{
 
     }
 
+    .ahmed-signature{
+
+        right:10px;
+
+        bottom:9px;
+
+        padding:6px 9px;
+
+        font-size:9px;
+
+        letter-spacing:1.5px;
+
+    }
+
+    .ahmed-light{
+
+        width:5px;
+        height:5px;
+
+    }
+
 }
 
 
@@ -3285,6 +3459,14 @@ button{
 <body>
 
 <div class="experience">
+
+
+    <!-- AHMED SIGNATURE -->
+
+    <div class="ahmed-signature">
+        <span class="ahmed-light"></span>
+        <span>AHMED</span>
+    </div>
 
 
     <!-- AURORA -->
@@ -4194,7 +4376,9 @@ function createCandles(){
         );
 
 
-        candleRow.appendChild(candle);
+        candleRow.appendChild(
+            candle
+        );
 
     }
 
@@ -4294,7 +4478,11 @@ async function startMicrophone(){
         microphoneStream =
             await navigator.mediaDevices
                 .getUserMedia({
-                    audio:true
+                    audio:{
+                        echoCancellation:false,
+                        noiseSuppression:false,
+                        autoGainControl:false
+                    }
                 });
 
 
@@ -4309,7 +4497,13 @@ async function startMicrophone(){
             audioContext.createAnalyser();
 
 
+        /*
+           رفع جودة قراءة النفخة
+        */
+
         analyser.fftSize=1024;
+
+        analyser.smoothingTimeConstant=0.08;
 
 
         const source =
@@ -4425,10 +4619,20 @@ function listenToBlow(){
         );
 
 
+    /*
+       حساسية النفخ أعلى من قبل
+
+       القديم:
+       rms * 1000
+
+       الجديد:
+       rms * 1600
+    */
+
     const power =
         Math.min(
             100,
-            rms*1000
+            rms*1600
         );
 
 
@@ -4436,9 +4640,21 @@ function listenToBlow(){
         power+"%";
 
 
+    /*
+       الحد الجديد للنفخة:
+
+       القديم:
+       0.075
+
+       الجديد:
+       0.045
+
+       يعني النفخة أخف بكثير تكفي.
+    */
+
     if(
-        rms>.075 &&
-        performance.now()-lastBlow>650
+        rms>.045 &&
+        performance.now()-lastBlow>400
     ){
 
         lastBlow =
@@ -4458,7 +4674,7 @@ function listenToBlow(){
 
 
 /* =====================================================
-   BLOW ONE CANDLE
+   BLOW ONE OR MORE CANDLES
 ===================================================== */
 
 function blowCandle(){
@@ -4488,13 +4704,19 @@ function blowCandle(){
         );
 
 
-    if(power>65){
+    /*
+       نفخة خفيفة = 1
+       نفخة متوسطة = 2
+       نفخة قوية = 3
+    */
+
+    if(power>60){
 
         count=3;
 
     }
 
-    else if(power>45){
+    else if(power>38){
 
         count=2;
 
